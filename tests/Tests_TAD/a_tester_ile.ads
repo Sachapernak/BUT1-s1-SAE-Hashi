@@ -1,4 +1,4 @@
-with Ile; use Ile;
+with ile; use ile;
 -- bibliothèque de gestion de chaînes de caractères
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 -- types utilisés pour les tests

@@ -1,15 +1,19 @@
 pragma Ada_2012;
 package body Ile is
 
+
    -------------------
    -- ConstruireIle --
    -------------------
 
    function ConstruireIle (v : in Integer) return Type_Ile is
+      ile : Type_Ile;
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "ConstruireIle unimplemented");
-      return raise Program_Error with "Unimplemented function ConstruireIle";
+      if v <= 0 or v > VALEUR_MAX then
+         raise VALEUR_ILE_INVALIDE;
+      end if;
+      ile.v := v;
+      return ile;
    end ConstruireIle;
 
    -------------------
@@ -18,9 +22,7 @@ package body Ile is
 
    function ObtenirValeur (i : in Type_Ile) return Integer is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "ObtenirValeur unimplemented");
-      return raise Program_Error with "Unimplemented function ObtenirValeur";
+      return i.v;
    end ObtenirValeur;
 
    --------------------
@@ -29,9 +31,7 @@ package body Ile is
 
    function estIleComplete (i : in Type_Ile) return Boolean is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "estIleComplete unimplemented");
-      return raise Program_Error with "Unimplemented function estIleComplete";
+      return i.v = 0;
    end estIleComplete;
 
    -----------------
@@ -39,9 +39,15 @@ package body Ile is
    -----------------
 
    function modifierIle (i : in Type_Ile; p : in Integer) return type_ile is
+      ile : Type_Ile;
    begin
-      pragma Compile_Time_Warning (Standard.True, "modifierIle unimplemented");
-      return raise Program_Error with "Unimplemented function modifierIle";
+      if p < 1 or p > 2 then
+         raise VALEUR_PONT_INVALIDE;
+      elsif i.v - p < 0 then
+         raise PONT_IMPOSSIBLE;
+      end if;
+      ile.v := i.v - p;
+      return ile;
    end modifierIle;
 
 end Ile;

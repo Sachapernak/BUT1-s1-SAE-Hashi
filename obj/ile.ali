@@ -1,0 +1,67 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U ile%b			ile.adb			1b18b306 NE OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+
+U ile%s			ile.ads			65d0b7b4 EE OO PK
+W orientation%s		orientation.adb		orientation.ali
+W pont%s		pont.adb		pont.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D ile.ads		20240109092222 e7306d41 ile%s
+D ile.adb		20240109082948 fc28de47 ile%b
+D orientation.ads	20240109073550 67230454 orientation%s
+D pont.ads		20240109092222 e5c3dea1 pont%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+G a e
+G c Z s b [construireile ile 18 13 none]
+G c Z s b [obtenirvaleur ile 21 13 none]
+G c Z s b [estilecomplete ile 25 13 none]
+G c Z s b [modifierile ile 32 13 none]
+G c Z s s [type_ileIP ile 36 9 none]
+X 4 ile.ads
+5K9*Ile 36E9 40l5 40e8 5|2b14 53l5 53t8
+7i4*VALEUR_MAX{integer} 5|12r24
+9R9*Type_Ile 18r52 21r35 25r36 32r33 33r24 36c9 38e14 5|9r51 10r13 23r35
+. 32r36 41r33 41r66 42r13
+11X4*VALEUR_ILE_INVALIDE 5|13r16
+12X4*VALEUR_PONT_INVALIDE 5|45r16
+13X4*PONT_IMPOSSIBLE 5|47r16
+18V13*ConstruireIle{9R9} 18>28 5|9b13 17l8 17t21
+18i28 v{integer} 5|9b28 12r10 12r20 15r16
+21V13*ObtenirValeur{integer} 21>28 5|23b13 26l8 26t21
+21r28 i{9R9} 5|23b28 25r14
+25V13*estIleComplete{boolean} 25>29 5|32b13 35l8 35t22
+25r29 i{9R9} 5|32b29 34r14
+32V13*modifierIle{9R9} 32>26 32>44 5|41b13 51l8 51t19
+32r26 i{9R9} 5|41b26 46r13 49r16
+32i44 p{integer} 5|41b43 44r10 44r19 46r19 49r22
+37i7*v{integer} 5|15m11 25r16 34r16 46r15 49m11 49r18
+X 5 ile.adb
+10r7 ile{4|9R9} 15m7 16r14
+42r7 ile{4|9R9} 49m7 50r14
+X 6 orientation.ads
+1K9*Orientation 4|1w6 1r24 6|31e16
+X 7 pont.ads
+1K9*Pont 4|2w6 2r17 7|32e9
+

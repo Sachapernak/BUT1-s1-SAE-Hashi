@@ -1,0 +1,32 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U orientation%b		orientation.adb		f27da61a NE OO PK
+
+U orientation%s		orientation.ads		67230454 EE NE OO PK
+
+D orientation.ads	20240109073550 67230454 orientation%s
+D orientation.adb	20240109084030 955ea24e orientation%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [valeurorientation orientation 18 13 none]
+G c Z s b [orientationinverse orientation 23 13 none]
+X 1 orientation.ads
+1K9*Orientation 26E9 31l5 31e16 2|2b14 40l5 40t16
+3I9*Type_Orientation<short_short_integer> 6r20 9r19 12r19 15r21 18r39 23r40
+. 23r65 26c9 27r21 28r21 29r21 30r21 2|8r39 26r14 26r39
+6i4*NORD{3I9} 27c4 2|10r14 29r14 32r17
+9i4*SUD{3I9} 28c4 2|12r17 30r17 31r17
+12i4*EST{3I9} 29c4 2|34r17
+15i4*OUEST{3I9} 30c4 2|14r17 33r17 36r17
+18V13*ValeurOrientation{integer} 18>32 2|8b13 19l8 19t25
+18i32 o{3I9} 2|8b32 10r10 12r13 14r13
+23V13*orientationInverse{3I9} 23>33 2|25b13 38l8 38t26
+23i33 o{3I9} 2|26b7 29r10 31r13 33r13
+
