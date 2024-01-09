@@ -352,6 +352,7 @@ package body a_tester_Grille is
    -- Test_Grille_P13 --
    ---------------------
 
+
    function Test_Grille_P13 return Boolean is
       G  : Type_Grille;
       c  : Type_CaseHashi;
@@ -361,7 +362,8 @@ package body a_tester_Grille is
       G  := ConstruireGrille (3, 3);
       Co := ConstruireCoordonnees (2, 2);
       c  := ConstruireCase (Co);
-      I  := ConstruireIle (0);
+      I  := ConstruireIle (1);
+      I  := ModifierIle(I,1);
       c  := modifierIle (c, I);
       modifierCase (G, c);
       return estComplete (G);
@@ -397,7 +399,7 @@ package body a_tester_Grille is
       return nbIle (G) = Nb + 1;
    end Test_Grille_P14;
 
-   ----------------------
+  ----------------------
    -- Test_Grille_P15a --
    ----------------------
 
@@ -414,15 +416,17 @@ package body a_tester_Grille is
       -- construction de la 1ere ile
       Co := ConstruireCoordonnees (1, 2);
       c  := ConstruireCase (Co);
-      I1 := ConstruireIle (0);
+      I1 := ConstruireIle (1);
+      I1  := ModifierIle(I,1);
       c  := modifierIle (c, I1);
       modifierCase (G, c);
       Nb := nbIleCompletes (G);
       -- construction de la 2nd ile
       Co := ConstruireCoordonnees (2, 1);
       c  := ConstruireCase (Co);
-      I2 := ConstruireIle (1);
-      c  := modifierIle (c, I2);
+        I2  := ConstruireIle (1);
+      I2  := ModifierIle(I,1);
+     c  := modifierIle (c, I2);
       modifierCase (G, c);
       return nbIleCompletes (G) = Nb;
    end Test_Grille_P15a;
@@ -444,7 +448,8 @@ package body a_tester_Grille is
       -- construction de la 1ere ile
       Co := ConstruireCoordonnees (1, 2);
       c  := ConstruireCase (Co);
-      I1 := ConstruireIle (0);
+      I1 := ConstruireIle (1);
+      I1 := ModifierIle(I,1);
       c  := modifierIle (c, I1);
       modifierCase (G, c);
       Nb := nbIleCompletes (G);
@@ -483,7 +488,8 @@ package body a_tester_Grille is
       -- construction de la 2nd ile
       Co2 := ConstruireCoordonnees (2, 1);
       c2  := ConstruireCase (Co2);
-      I2  := ConstruireIle (0);
+      I2  := ConstruireIle (1);
+      I2  := ModifierIle(I,1);
       c2  := modifierIle (c2, I2);
       modifierCase (G, c2);
       return
