@@ -11,7 +11,7 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U casehashi%b		casehashi.adb		d204fab2 NE OO PK
+U casehashi%b		casehashi.adb		9648d3e3 NE OO PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 
 U casehashi%s		casehashi.ads		0943a4f7 EE OO PK
@@ -26,18 +26,18 @@ W typecase%s		typecase.adb		typecase.ali
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D casehashi.ads		20240109073550 509b8585 casehashi%s
-D casehashi.adb		20240109092824 829f7f37 casehashi%b
-D coordonnee.ads	20240109073550 b1b28967 coordonnee%s
-D ile.ads		20240109092222 e7306d41 ile%s
-D orientation.ads	20240109073550 67230454 orientation%s
-D pont.ads		20240109092222 e5c3dea1 pont%s
+D casehashi.ads		20240109074654 509b8585 casehashi%s
+D casehashi.adb		20240109101924 c6d35666 casehashi%b
+D coordonnee.ads	20240109074654 b1b28967 coordonnee%s
+D ile.ads		20240109091536 e7306d41 ile%s
+D orientation.ads	20240109074654 67230454 orientation%s
+D pont.ads		20240109091756 e5c3dea1 pont%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
-D typecase.ads		20240109073550 ea991bf5 typecase%s
+D typecase.ads		20240109074654 ea991bf5 typecase%s
 G a e
 G c Z s b [construirecase casehashi 13 13 none]
 G c Z s b [obtenirtypecase casehashi 16 13 none]
@@ -48,52 +48,65 @@ G c Z s b [modifierile casehashi 35 13 none]
 G c Z s b [modifierpont casehashi 43 13 none]
 G c Z s b [Oeq casehashi 47 13 none]
 G c Z s s [type_casehashiIP casehashi 52 9 none]
+G r c none [obtenirile casehashi 24 13 none] [estile typecase 18 13 none]
+G r c none [obtenirpont casehashi 29 13 none] [estpont typecase 21 13 none]
+G r c none [modifierile casehashi 35 13 none] [estpont typecase 21 13 none]
+G r c none [modifierpont casehashi 43 13 none] [estile typecase 18 13 none]
+G r c none [modifierpont casehashi 43 13 none] [estpont typecase 21 13 none]
+G r c none [modifierpont casehashi 43 13 none] [Oeq pont 25 13 none]
 G r c none [Oeq casehashi 47 13 none] [Oeq pont 25 13 none]
 X 4 casehashi.ads
-6K9*CaseHashi 52E9 59l5 59e14 5|2b14 95l5 95t14
+6K9*CaseHashi 52E9 59l5 59e14 5|2b14 106l5 106t14
 8R9*Type_CaseHashi 13r60 16r37 19r39 24r32 29r33 36r14 36r54 44r14 44r55
-. 48r15 48r39 52c9 57e14 5|8r58 9r12 20r35 29r37 38r30 51r31 64r31 64r70
-. 77r32 77r72 90r24 90r47
-10X4*TYPE_INCOMPATIBLE 5|43r16 56r16 69r16 82r16
+. 48r15 48r39 52c9 57e14 5|8r58 9r12 20r35 29r37 38r30 50r31 62r31 62r70
+. 63r12 80r14 80r55 82r14 101r24 101r47
+10X4*TYPE_INCOMPATIBLE 5|41r16 53r16 66r16 85r16
 13V13*ConstruireCase{8R9} 13>29 5|8b13 14l8 14t22
 13r29 C{6|3R9} 5|8b28 11r15
 16V13*ObtenirTypeCase{15|3I9} 16>30 5|20b13 23l8 23t23
 16r30 C{8R9} 5|20b29 22r14
-19V13*ObtenirCoordonnee{6|3R9} 19>32 5|29b13 32l8 32t25
+19V13*ObtenirCoordonnee{6|3R9} 19>32 5|29b13 32l8 32t25 87s17
 19r32 C{8R9} 5|29b31 31r14
-24V13*ObtenirIle{7|9R9} 24>25 5|38b13 45l8 45t18
-24r25 C{8R9} 5|38b24 40r10 41r17
-29V13*ObtenirPont{9|4I9} 29>26 5|51b13 58l8 58t19
-29r26 C{8R9} 5|51b25 53r10 54r17
-35V13*modifierIle{8R9} 36>7 36>30 5|64b13 71l8 71t19
-36r7 C{8R9} 5|64b25 66r10 67r18 67r23 67r31
-36r30 I{7|9R9} 5|64b47 67r28
-43V13*modifierPont{8R9} 44>7 44>30 5|77b13 84l8 84t20
-44r7 C{8R9} 5|77b26 79r10 80r18 80r23 80r28
-44i30 p{9|4I9} 5|77b48 80r33
-47V14*"="{boolean} 48>7 48>31 5|90b14 93l9 93t11
-48r7 C1{8R9} 5|90b17 92r14 92r30 92r46 92r62
-48r31 C2{8R9} 5|90b40 92r21 92r37 92r53 92r69
-53r7*C{6|3R9} 5|11m10 31r16 67r20 80r20 92r17 92r24
-54i7*T{15|3I9} 5|12m10 22r16 40r12 53r12 66r12 67r25 79r12 80r25 92r33 92r40
-55r7*I{7|9R9} 5|41r19 80r30 92r49 92r56
-56i7*P{9|4I9} 5|54r19 67r33 92r65 92r72
+24V13*ObtenirIle{7|9R9} 24>25 5|38b13 44l8 44t18
+24r25 C{8R9} 5|38b24 40r21 43r14
+29V13*ObtenirPont{9|4I9} 29>26 5|50b13 56l8 56t19 89s32
+29r26 C{8R9} 5|50b25 52r22 55r14
+35V13*modifierIle{8R9} 36>7 36>30 5|62b13 73l8 73t19
+36r7 C{8R9} 5|62b25 65r18 69r13
+36r30 I{7|9R9} 5|62b47 70r15
+43V13*modifierPont{8R9} 44>7 44>30 5|79b13 95l8 95t20
+44r7 C{8R9} 5|80b7 84r17 87r35 89r18 89r44
+44i30 p{9|4I9} 5|80b30 92r20
+47V14*"="{boolean} 48>7 48>31 5|101b14 104l9 104t11
+48r7 C1{8R9} 5|101b17 103r14 103r30 103r46 103r62
+48r31 C2{8R9} 5|101b40 103r21 103r37 103r53 103r69
+53r7*C{6|3R9} 5|11m10 31r16 87m12 103r17 103r24
+54i7*T{15|3I9} 5|12m10 22r16 40r23 52r24 65r20 71m10 84r19 88m12 89r20 103r33
+. 103r40
+55r7*I{7|9R9} 5|43r16 70m10 103r49 103r56
+56i7*P{9|4I9} 5|55r16 90m15 92m15 103r65 103r72
 X 5 casehashi.adb
 9r7 ca{4|8R9} 11m7 12m7 13r14
+63r7 ca{4|8R9} 69m7 70m7 71m7 72r14
+82r7 NewC{4|8R9} 87m7 88m7 90m10 92m10 94r14
 X 6 coordonnee.ads
 1K9*Coordonnee 4|1w6 1r22 6|21e15
 3R9*Type_Coordonnee 4|13r36 19r62 53r11 5|8r34 29r60 6|19e14
 X 7 ile.ads
 5K9*Ile 4|2w6 2r22 7|40e8
-9R9*Type_Ile 4|24r55 36r37 55r11 5|38r53 64r53 7|38e14
+9R9*Type_Ile 4|24r55 36r37 55r11 5|38r53 62r53 7|38e14
 X 9 pont.ads
 1K9*Pont 4|3w6 3r22 9|32e9
-4I9*Type_Pont<short_short_integer> 4|29r56 44r37 56r11 5|51r54 77r54
-25V14*"="{boolean} 5|92s67
+4I9*Type_Pont<short_short_integer> 4|29r56 44r37 56r11 5|50r54 80r37
+7i4*UN{4I9} 5|89r48
+10i4*DEUX{4I9} 5|90r19
+25V14*"="{boolean} 5|89s46 103s67
 X 15 typecase.ads
 1K9*TypeCase 4|4w6 4r22 15|31e13
 3I9*Type_TypeCase<short_short_integer> 4|16r60 54r11 5|20r58
-6i4*NOEUD{3I9} 5|40r16 66r16
-9i4*ARETE{3I9} 5|53r16 79r16
+6i4*NOEUD{3I9} 5|71r15
+9i4*ARETE{3I9} 5|88r17
 12i4*MER{3I9} 5|12r15
+18V13*estIle{boolean} 5|40s14 84s10
+21V13*estPont{boolean} 5|52s14 65s10 89s10
 

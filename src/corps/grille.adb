@@ -119,7 +119,7 @@ package body Grille is
       return Boolean
    is
    begin
-
+      raise
    end aUnSuivant;
 
    --------------------

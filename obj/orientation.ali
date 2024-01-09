@@ -11,8 +11,8 @@ U orientation%b		orientation.adb		f27da61a NE OO PK
 
 U orientation%s		orientation.ads		67230454 EE NE OO PK
 
-D orientation.ads	20240109073550 67230454 orientation%s
-D orientation.adb	20240109084030 955ea24e orientation%b
+D orientation.ads	20240109074654 67230454 orientation%s
+D orientation.adb	20240109083614 955ea24e orientation%b
 D system.ads		20210520051136 2ffa5114 system%s
 G a e
 G c Z s b [valeurorientation orientation 18 13 none]

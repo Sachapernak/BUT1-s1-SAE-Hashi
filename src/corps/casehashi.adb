@@ -37,11 +37,10 @@ package body CaseHashi is
    
    function ObtenirIle(C: in Type_CaseHashi) return Type_Ile is
    begin
-      if C.T = NOEUD then
-         return C.I;
-      else
+      if not estIle(C.T) then
          raise TYPE_INCOMPATIBLE;
       end if;
+      return C.I;
    end ObtenirIle;
 
    -----------------
@@ -50,11 +49,10 @@ package body CaseHashi is
    
    function ObtenirPont(C: in Type_CaseHashi) return Type_Pont is
    begin
-      if C.T = ARETE then
-         return C.P;
-      else
+      if not estPont(C.T) then 
          raise TYPE_INCOMPATIBLE;
       end if;
+      return C.P;
    end ObtenirPont;
 
    -----------------
@@ -62,27 +60,40 @@ package body CaseHashi is
    -----------------
    
    function modifierIle(C: in Type_CaseHashi; I: in Type_Ile) return Type_CaseHashi is
+      ca : Type_CaseHashi;
    begin
-      if C.T = NOEUD then
-         return (C.C, C.T, I, C.P);
-      else
+      if estPont(C.T) then
          raise TYPE_INCOMPATIBLE;
       end if;
+      
+      ca := C;
+      ca.I := I;
+      ca.T := NOEUD;
+      return ca;
    end modifierIle;
 
    ------------------
    -- modifierPont --
    ------------------
-   
-   function modifierPont(C: in Type_CaseHashi; P: in Type_Pont) return Type_CaseHashi is
+
+   function modifierPont
+     (C : in Type_CaseHashi; p : in Type_Pont) return Type_CaseHashi
+   is
+      NewC : Type_CaseHashi;
    begin
-      if C.T = ARETE then
-         return (C.C, C.T, C.I, P);
-      else
+      if EstIle(C.T)  then
          raise TYPE_INCOMPATIBLE;
       end if;
+      NewC.c := ObtenirCoordonnee(C);
+      NewC.T := ARETE;
+      if EstPont(C.T) and then ObtenirPont(C)= UN then
+         NewC.p:= DEUX;
+      else
+         NewC.p := p;
+      end if;
+      return NewC;
    end modifierPont;
-
+ 
    ---------
    -- "=" --
    ---------
