@@ -1,0 +1,41 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U orientation%b		orientation.adb		4b543817 NE OO PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+
+U orientation%s		orientation.ads		67230454 EE NE OO PK
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D orientation.ads	20240109074654 67230454 orientation%s
+D orientation.adb	20240109082440 2c773c43 orientation%b
+D system.ads		20210520051136 2ffa5114 system%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+G a e
+G c Z s b [valeurorientation orientation 18 13 none]
+G c Z s b [orientationinverse orientation 23 13 none]
+X 4 orientation.ads
+1K9*Orientation 26E9 31l5 31e16 5|2b14 30l5 30t16
+3I9*Type_Orientation<short_short_integer> 6r20 9r19 12r19 15r21 18r39 23r40
+. 23r65 26c9 27r21 28r21 29r21 30r21 5|8r39 21r14 21r39
+6i4*NORD{3I9} 27c4
+9i4*SUD{3I9} 28c4
+12i4*EST{3I9} 29c4
+15i4*OUEST{3I9} 30c4
+18V13*ValeurOrientation{integer} 18>32 5|8b13 14l8 14t25
+18i32 o{3I9} 5|8b32
+23V13*orientationInverse{3I9} 23>33 5|20b13 28l8 28t26
+23i33 o{3I9} 5|21b7
+

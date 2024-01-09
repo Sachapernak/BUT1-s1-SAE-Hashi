@@ -3,7 +3,7 @@ with Ada.Text_IO;         use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 --with Affichage;           use Affichage;
 -- TAD
-with Ile;         use Ile;
+with ile;         use Ile;
 with Pont;        use Pont;
 with Orientation; use Orientation;
 
