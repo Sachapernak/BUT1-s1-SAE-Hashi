@@ -1,4 +1,5 @@
 pragma Ada_2012;
+with Ada.Text_IO; use Ada.Text_IO;
 package body Grille is
 
    ----------------------
@@ -10,8 +11,20 @@ package body Grille is
    is
       G : Type_Grille;
    begin
+      if Nbl > TAILLE_MAX and Nbl < 0 then
+         raise TAILLE_INVALIDE;
+      elsif Nbc > TAILLE_MAX and Nbc < 0 then
+         raise TAILLE_INVALIDE;
+      end if;
       G.Nbl := Nbl;
       G.Nbc := Nbc;
+      for i in 1..nbl loop
+        for j in 1..Nbc loop
+            G.g(i,j) := ConstruireCase(ConstruireCoordonnees(i,j));
+         end loop;
+      end loop;
+
+
       return G;
    end ConstruireGrille;
 
@@ -39,9 +52,9 @@ package body Grille is
 
    function EstGrilleVide (G : in Type_Grille) return Boolean is
    begin
-      for J in 1..Nblignes(G) loop
-         for I in 1..NbColonnes(G) loop
-            if not(Estmer(Obtenirtypecase(G.G(I,J)))) then
+      for I in 1..Nblignes(G) loop
+         for J in 1..NbColonnes(G) loop
+            if estIle(ObtenirTypeCase(G.g(i,j))) then
                return False;
             end if;
          end loop;
@@ -55,9 +68,12 @@ package body Grille is
 
    function EstComplete (G : in Type_Grille) return Boolean is
    begin
-      for J in 1..Nblignes(G) loop
-         for I in 1..NbColonnes(G) loop
-            if EstIleComplete(Obtenirile(G.G(I,J))) then
+      if EstGrilleVide(G) then
+         return False;
+      end if;
+      for I in 1..Nblignes(G) loop
+         for J in 1..NbColonnes(G) loop
+            if estIle(ObtenirTypeCase(G.G(I,J))) and then (not EstIleComplete(Obtenirile(G.G(I,J)))) then
                return False;
             end if;
          end loop;
@@ -72,10 +88,11 @@ package body Grille is
    function NbIle (G : in Type_Grille) return Integer is
       Resultat : Integer := 0;
    begin
-      for J in 1..Nblignes(G) loop
-         for I in 1..NbColonnes(G) loop
+      for I in 1..Nblignes(G) loop
+         for J in 1..NbColonnes(G) loop
             if Estile(Obtenirtypecase(G.G(I,J))) then
                Resultat := Resultat + 1;
+               Put_Line(Integer'Image(Resultat));
             end if;
          end loop;
       end loop;
@@ -89,8 +106,8 @@ package body Grille is
    function NbIleCompletes (G : in Type_Grille) return Integer is
       Resultat : Integer := 0;
    begin
-      for J in 1..Nblignes(G) loop
-         for I in 1..NbColonnes(G) loop
+      for I in 1..Nblignes(G) loop
+         for J in 1..NbColonnes(G) loop
             if EstIleComplete(Obtenirile(G.G(I,J))) then
                Resultat := Resultat + 1;
             end if;
