@@ -7,10 +7,15 @@ package body Orientation is
 
    function ValeurOrientation (o : in Type_Orientation) return Integer is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "ValeurOrientation unimplemented");
-      return
-        raise Program_Error with "Unimplemented function ValeurOrientation";
+      if o = NORD then
+         return -1;
+      elsif o = SUD then
+         return 1;
+      elsif o = OUEST then
+         return 2;
+      else
+         return -2;
+      end if;
    end ValeurOrientation;
 
    ------------------------
@@ -21,10 +26,15 @@ package body Orientation is
      (o : in Type_Orientation) return Type_Orientation
    is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "orientationInverse unimplemented");
-      return
-        raise Program_Error with "Unimplemented function orientationInverse";
+      if o = NORD then
+         return SUD;
+      elsif o = SUD then
+         return NORD;
+      elsif o = OUEST then
+         return EST;
+      else
+         return OUEST;
+      end if;
    end orientationInverse;
 
 end Orientation;

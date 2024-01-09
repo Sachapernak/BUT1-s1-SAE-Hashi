@@ -1,2 +1,0 @@
-orientation.adb:11:10: warning: ValeurOrientation unimplemented [enabled by default]
-orientation.adb:25:10: warning: orientationInverse unimplemented [enabled by default]
