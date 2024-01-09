@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\caseHashi.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\coordonnee.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\pont.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\orientation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\orientation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\caseHashi.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
