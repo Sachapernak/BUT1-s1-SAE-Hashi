@@ -1,4 +1,0 @@
-ile.adb:8:18: error: positional aggregate cannot have one component
-ile.adb:8:18: error: write instead "v => ..."
-ile.adb:28:25: error: positional aggregate cannot have one component
-ile.adb:28:25: error: write instead "v => ..."

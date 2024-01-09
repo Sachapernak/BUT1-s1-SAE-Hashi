@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__run_tests_coordonnees.o
+[PROJECT FILES]
+C:\Users\camma\Documents\GitHub\sae-s1.02\hashi.gpr
+20240109084214 e52461ff66d0a973365edb1a75f2ba45
+[BOUND OBJECT FILES]
+C:\Users\camma\Documents\GitHub\sae-s1.02\obj\coordonnee.o
+C:\Users\camma\Documents\GitHub\sae-s1.02\obj\types_tests.o
+C:\Users\camma\Documents\GitHub\sae-s1.02\obj\a_tester_Coordonnees.o
+C:\Users\camma\Documents\GitHub\sae-s1.02\obj\run_tests_Coordonnees.o
+[GENERATED SOURCE FILES]
+b__run_tests_coordonnees.ads
+b__run_tests_coordonnees.adb
+b__run_tests_coordonnees.ali
+[RESULTING OPTIONS]
+-LC:\Users\camma\Documents\GitHub\sae-s1.02\obj\
+-LC:\Users\camma\Documents\GitHub\sae-s1.02\obj\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
