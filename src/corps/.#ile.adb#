@@ -22,9 +22,7 @@ package body Ile is
 
    function ObtenirValeur (i : in Type_Ile) return Integer is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "ObtenirValeur unimplemented");
-      return raise Program_Error with "Unimplemented function ObtenirValeur";
+      return i.v;
    end ObtenirValeur;
 
    --------------------
