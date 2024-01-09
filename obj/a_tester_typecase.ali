@@ -1,0 +1,149 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U a_tester_typecase%b	a_tester_typecase.adb	4c1aa6c4 NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+U a_tester_typecase%s	a_tester_typecase.ads	66a822f9 EE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W typecase%s		typecase.adb		typecase.ali
+W types_tests%s		types_tests.ads		types_tests.ali
+
+D a_tester_typecase.ads	20240109073550 3fa6770e a_tester_typecase%s
+D a_tester_typecase.adb	20240109073550 73bcd1ca a_tester_typecase%b
+D ada.ads		20210520051132 76789da1 ada%s
+D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
+D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-strmap.ads		20210520051130 5a88892a ada.strings.maps%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-strunb.ads		20210520051130 03325227 ada.strings.unbounded%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-finmas.ads		20210520051132 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-memory.ads		20210520051134 597d6634 system.memory%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stalib.adb		20210520051134 977290bf system.standard_library%b
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20210520051134 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D typecase.ads		20240109073550 ea991bf5 typecase%s
+D types_tests.ads	20240109073550 b0a51c25 types_tests%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [test_typecase_p1 a_tester_typecase 10 13 none]
+G c Z s b [test_typecase_p2 a_tester_typecase 11 13 none]
+G c Z s b [test_typecase_p3 a_tester_typecase 12 13 none]
+G c Z s b [test_typecase_p4 a_tester_typecase 13 13 none]
+G c Z s b [test_typecase_p5 a_tester_typecase 14 13 none]
+G c Z s b [test_typecase_p6 a_tester_typecase 15 13 none]
+G c Z s b [test_typecase_p7 a_tester_typecase 16 13 none]
+G c Z s b [test_typecase_p8 a_tester_typecase 17 13 none]
+G c Z s b [test_typecase_p9 a_tester_typecase 18 13 none]
+G c Z s b [test_typecase_p10 a_tester_typecase 19 13 none]
+G c Z s b [test_typecase_p11 a_tester_typecase 20 13 none]
+G c Z s b [test_typecase_p12 a_tester_typecase 21 13 none]
+G c Z s s [Tles_testsT1sDI a_tester_typecase 23 4 none]
+G c Z s s [Tles_testsT1sDF a_tester_typecase 23 4 none]
+G c Z s s [TresultatsBIP a_tester_typecase 51 4 none]
+G r c none [test_typecase_p1 a_tester_typecase 10 13 none] [valeurtypecase typecase 15 13 none]
+G r c none [test_typecase_p2 a_tester_typecase 11 13 none] [valeurtypecase typecase 15 13 none]
+G r c none [test_typecase_p3 a_tester_typecase 12 13 none] [valeurtypecase typecase 15 13 none]
+G r c none [test_typecase_p4 a_tester_typecase 13 13 none] [estile typecase 18 13 none]
+G r c none [test_typecase_p5 a_tester_typecase 14 13 none] [estile typecase 18 13 none]
+G r c none [test_typecase_p6 a_tester_typecase 15 13 none] [estile typecase 18 13 none]
+G r c none [test_typecase_p7 a_tester_typecase 16 13 none] [estpont typecase 21 13 none]
+G r c none [test_typecase_p8 a_tester_typecase 17 13 none] [estpont typecase 21 13 none]
+G r c none [test_typecase_p9 a_tester_typecase 18 13 none] [estpont typecase 21 13 none]
+G r c none [test_typecase_p10 a_tester_typecase 19 13 none] [estmer typecase 24 13 none]
+G r c none [test_typecase_p11 a_tester_typecase 20 13 none] [estmer typecase 24 13 none]
+G r c none [test_typecase_p12 a_tester_typecase 21 13 none] [estmer typecase 24 13 none]
+G r l test_unitaire [Tles_testsT1sDI a_tester_typecase 23 4 none] [test_unitaireDI types_tests 7 9 none]
+G r k test_unitaire [Tles_testsT1sDI a_tester_typecase 23 4 none] [test_unitaireDF types_tests 7 9 none]
+G r k test_unitaire [Tles_testsT1sDF a_tester_typecase 23 4 none] [test_unitaireDF types_tests 7 9 none]
+X 1 a_tester_typecase.ads
+7K9*A_Tester_TypeCase 53l5 53e22 2|1b14 79l5 79t22
+10V13*Test_TypeCase_P1{boolean} 25r10 2|8b13 11l8 11t24
+11V13*Test_TypeCase_P2{boolean} 27r8 2|14b13 17l8 17t24
+12V13*Test_TypeCase_P3{boolean} 29r8 2|20b13 23l8 23t24
+13V13*Test_TypeCase_P4{boolean} 31r10 2|26b13 29l8 29t24
+14V13*Test_TypeCase_P5{boolean} 33r8 2|32b13 35l8 35t24
+15V13*Test_TypeCase_P6{boolean} 35r8 2|38b13 41l8 41t24
+16V13*Test_TypeCase_P7{boolean} 37r10 2|44b13 47l8 47t24
+17V13*Test_TypeCase_P8{boolean} 39r8 2|50b13 53l8 53t24
+18V13*Test_TypeCase_P9{boolean} 41r8 2|56b13 59l8 59t24
+19V13*Test_TypeCase_P10{boolean} 43r10 2|62b13 65l8 65t25
+20V13*Test_TypeCase_P11{boolean} 45r8 2|68b13 71l8 71t25
+21V13*Test_TypeCase_P12{boolean} 47r8 2|74b13 77l8 77t25
+23a4*Les_Tests(37|7R9) 51r23
+51a4*Resultats(boolean)
+X 3 ada.ads
+16K9*Ada 1|3r6 3r33 3|20e8
+X 9 a-string.ads
+16K13*Strings 1|3r10 3r37 9|35e16
+X 12 a-strunb.ads
+83K21*Unbounded 1|3w18 3r45 12|765e26
+104V13*To_Unbounded_String{88R9} 1|26s8 28s8 30s8 32s8 34s8 36s8 38s8 40s8
+. 42s8 44s8 46s8 48s8
+X 17 system.ads
+67M9*Address
+X 22 s-memory.ads
+53V13*Alloc{17|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{17|67M9} 105i<c,__gnat_realloc>22
+X 29 s-stalib.adb
+89U14 Break_Start 90i<c,__gnat_break_start>22
+X 36 typecase.ads
+1K9*TypeCase 1|1w6 1r20 36|31e13
+3I9*Type_TypeCase<short_short_integer>
+6i4*NOEUD{3I9} 2|10r31 28r22 46r27 64r26
+9i4*ARETE{3I9} 2|16r31 34r26 52r24 70r26
+12i4*MER{3I9} 2|22r31 40r26 58r27 76r22
+15V13*ValeurTypeCase{integer} 2|10s15 16s15 22s15
+18V13*estIle{boolean} 2|28s14 34s18 40s18
+21V13*estPont{boolean} 2|46s18 52s15 58s18
+24V13*estMer{boolean} 2|64s18 70s18 76s14
+X 37 types_tests.ads
+3K9*Types_Tests 1|5w6 5r23 37|12e16
+7R9*Test_Unitaire 1|23r54 37|10e14
+

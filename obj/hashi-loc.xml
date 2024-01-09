@@ -3,112 +3,204 @@
   <Project>
     <vfs_file />
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\caseHashi.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\coordonnee.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\pont.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\orientation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\orientation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\caseHashi.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\corps\ile.adb</vfs_file>
+      <vfs_project />
+      <vfs_file>C:\GNAT\2021\bin\tp1 algo.gpr</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project />
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_file>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\corps\ile.adb</vfs_file>
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\typecase.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\caseHashi.ads</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_TypeCase.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\corps\ile.adb</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_TypeCase.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\typecase.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\grille.ads</vfs_file>
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\typecase.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\caseHashi.ads</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\coordonnee.ads</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
     </file_marker>
+<<<<<<< Updated upstream
     <file_marker column=" 31" line=" 17" >
       <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
       <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\specifications\ile.ads</vfs_file>
+=======
+    <file_marker column=" 1" line=" 32" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\typecase.ads</vfs_file>
+>>>>>>> Stashed changes
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\tests\Tests_TAD\a_tester_ile.ads</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_TypeCase.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
-      <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
-      <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\tests\Tests_TAD\a_tester_ile.adb</vfs_file>
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_TypeCase.adb</vfs_file>
     </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 31" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 10" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\typecase.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\orientation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_orientation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_orientation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 31" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\typecase.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\run_tests_iles.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\run_tests_iles.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_ile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 46" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_ile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\ile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 29" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\specifications\ile.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 17" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_TypeCase.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 8" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 17" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\tests\Tests_TAD\a_tester_TypeCase.adb</vfs_file>
+    </file_marker>
+<<<<<<< Updated upstream
     <file_marker column=" 1" line=" 1" >
       <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
       <vfs_file>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\src\corps\ile.adb</vfs_file>
+=======
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\hashi.gpr</vfs_project>
+      <vfs_file>C:\Users\olivier\OneDrive\Bureau\sae-s1.02\src\corps\ile.adb</vfs_file>
+>>>>>>> Stashed changes
     </file_marker>
     <file_marker column=" 16" line=" 13" >
       <vfs_project>C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\hashi.gpr</vfs_project>
