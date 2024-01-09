@@ -15,8 +15,8 @@ U ile%b			ile.adb			1b18b306 NE OO PK
 Z ada.exceptions%s	a-except.adb		a-except.ali
 
 U ile%s			ile.ads			65d0b7b4 EE OO PK
-W orientation%s		orientation.ads		orientation.ali
-W pont%s		pont.ads		pont.ali
+W orientation%s		orientation.adb		orientation.ali
+W pont%s		pont.adb		pont.ali
 Z system%s		system.ads		system.ali
 Z system.exception_table%s  s-exctab.adb	s-exctab.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
@@ -24,10 +24,10 @@ Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D ile.ads		20240109081300 e7306d41 ile%s
+D ile.ads		20240109091536 e7306d41 ile%s
 D ile.adb		20240109082408 fc28de47 ile%b
 D orientation.ads	20240109074654 67230454 orientation%s
-D pont.ads		20240109080342 e5c3dea1 pont%s
+D pont.ads		20240109091756 e5c3dea1 pont%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s

@@ -1,7 +1,7 @@
 pragma Warnings (Off);
 pragma Ada_95;
-pragma Source_File_Name (ada_main, Spec_File_Name => "b__run_tests_typecase.ads");
-pragma Source_File_Name (ada_main, Body_File_Name => "b__run_tests_typecase.adb");
+pragma Source_File_Name (ada_main, Spec_File_Name => "b__run_tests_ponts.ads");
+pragma Source_File_Name (ada_main, Body_File_Name => "b__run_tests_ponts.adb");
 pragma Suppress (Overflow_Check);
 with Ada.Exceptions;
 
@@ -30,12 +30,12 @@ package body ada_main is
    E123 : Short_Integer; pragma Import (Ada, E123, "system__finalization_root_E");
    E119 : Short_Integer; pragma Import (Ada, E119, "ada__finalization_E");
    E147 : Short_Integer; pragma Import (Ada, E147, "system__file_io_E");
-   E136 : Short_Integer; pragma Import (Ada, E136, "system__storage_pools_E");
-   E134 : Short_Integer; pragma Import (Ada, E134, "system__finalization_masters_E");
+   E138 : Short_Integer; pragma Import (Ada, E138, "system__storage_pools_E");
+   E136 : Short_Integer; pragma Import (Ada, E136, "system__finalization_masters_E");
    E108 : Short_Integer; pragma Import (Ada, E108, "ada__strings__unbounded_E");
    E143 : Short_Integer; pragma Import (Ada, E143, "ada__text_io_E");
-   E138 : Short_Integer; pragma Import (Ada, E138, "typecase_E");
-   E005 : Short_Integer; pragma Import (Ada, E005, "a_tester_typecase_E");
+   E134 : Short_Integer; pragma Import (Ada, E134, "pont_E");
+   E005 : Short_Integer; pragma Import (Ada, E005, "a_tester_pont_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -60,7 +60,7 @@ package body ada_main is
       begin
          F2;
       end;
-      E134 := E134 - 1;
+      E136 := E136 - 1;
       declare
          procedure F3;
          pragma Import (Ada, F3, "system__finalization_masters__finalize_spec");
@@ -225,23 +225,23 @@ package body ada_main is
       System.File_Io'Elab_Body;
       E147 := E147 + 1;
       System.Storage_Pools'Elab_Spec;
-      E136 := E136 + 1;
+      E138 := E138 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E134 := E134 + 1;
+      E136 := E136 + 1;
       Ada.Strings.Unbounded'Elab_Spec;
       Ada.Strings.Unbounded'Elab_Body;
       E108 := E108 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E143 := E143 + 1;
-      E138 := E138 + 1;
-      A_Tester_Typecase'Elab_Spec;
+      E134 := E134 + 1;
+      A_Tester_Pont'Elab_Spec;
       E005 := E005 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
-   pragma Import (Ada, Ada_Main_Program, "_ada_run_tests_typecase");
+   pragma Import (Ada, Ada_Main_Program, "_ada_run_tests_ponts");
 
    function main
      (argc : Integer;
@@ -275,10 +275,10 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\typecase.o
+   --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\pont.o
    --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\types_tests.o
-   --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\a_tester_TypeCase.o
-   --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\run_tests_TypeCase.o
+   --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\a_tester_pont.o
+   --   C:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\run_tests_ponts.o
    --   -LC:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\
    --   -LC:\Users\sacha\Desktop\IUT Info\DocumentIut\S1.02\sae-s1.02\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/

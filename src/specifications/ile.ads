@@ -10,7 +10,7 @@ package Ile is
 
    VALEUR_ILE_INVALIDE : exception;
    VALEUR_PONT_INVALIDE : exception;
-   PONT_IMPOSSIBLE : exception;
+   PONT_IMPOSSIBLE : exception; 
 
    -- construit une ile ayant la valeur v
    -- nécessite 0 < v <= 8

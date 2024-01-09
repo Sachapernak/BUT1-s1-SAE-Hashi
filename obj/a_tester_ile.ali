@@ -21,8 +21,8 @@ W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W ile%s			ile.adb			ile.ali
-W orientation%s		orientation.ads		orientation.ali
-W pont%s		pont.ads		pont.ali
+W orientation%s		orientation.adb		orientation.ali
+W pont%s		pont.adb		pont.ali
 
 U a_tester_ile%s	a_tester_ile.ads	23815b7a EE OO PK IL
 W ada%s			ada.ads			ada.ali
@@ -58,11 +58,11 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D ile.ads		20240109081300 e7306d41 ile%s
+D ile.ads		20240109091536 e7306d41 ile%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
 D orientation.ads	20240109074654 67230454 orientation%s
-D pont.ads		20240109080342 e5c3dea1 pont%s
+D pont.ads		20240109091756 e5c3dea1 pont%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s

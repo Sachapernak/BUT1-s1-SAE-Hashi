@@ -18,12 +18,12 @@ RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 RV NO_OBSOLESCENT_FEATURES
 
-U ada_main%b		b__run_tests_typecase.adb  596f691b OO PK IL
+U ada_main%b		b__run_tests_ponts.adb	10b28216 OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 Z system%s		system.ads		system.ali
 
-U ada_main%s		b__run_tests_typecase.ads  becc5013 EE NE OO PK IL
+U ada_main%s		b__run_tests_ponts.ads	749b4f4c EE NE OO PK IL
 W system%s		system.ads		system.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
@@ -31,8 +31,8 @@ W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 D ada.ads		20210520051132 76789da1 ada%s
 D a-except.ads		20210520051128 946f3014 ada.exceptions%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D b__run_tests_typecase.ads  20240109092112 4d5e7c87 ada_main%s
-D b__run_tests_typecase.adb  20240109092112 805e2588 ada_main%b
+D b__run_tests_ponts.ads  20240109091910 870963d8 ada_main%s
+D b__run_tests_ponts.adb  20240109091910 03d4d1da ada_main%b
 D system.ads		20210520051136 2ffa5114 system%s
 D s-parame.ads		20210520051134 4752c4cb system.parameters%s
 D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
@@ -50,7 +50,7 @@ X 1 ada.ads
 16K9*Ada 20e8 5|6r6
 X 2 a-except.ads
 44K13*Exceptions 289e19 5|6w10
-X 4 b__run_tests_typecase.ads
+X 4 b__run_tests_ponts.ads
 6K9*ada_main 539l5 539e13 5|8b14 290l5 290t13
 8i4*gnat_argc{integer} 12m22 12r22 5|263r10 264m10
 9m4*gnat_argv{6|67M9} 13m22 13r22 5|265m10
@@ -244,7 +244,7 @@ X 4 b__run_tests_typecase.ads
 365m4*u00162{42M9} 366r22
 367m4*u00163{42M9} 368r22
 369m4*u00164{42M9} 370r22
-X 5 b__run_tests_typecase.adb
+X 5 b__run_tests_ponts.adb
 10i4 E067{short_integer} 10m46 10r46 201m7 201r15
 11i4 E018{short_integer} 11m46 11r46 207m7 207r15
 12i4 E014{short_integer} 12m46 12r46 204m7 204r15
@@ -268,11 +268,11 @@ X 5 b__run_tests_typecase.adb
 30i4 E123{short_integer} 30m46 30r46 222m7 222r15
 31i4 E119{short_integer} 31m46 31r46 224m7 224r15
 32i4 E147{short_integer} 32m46 32r46 74m10 74r18 226m7 226r15
-33i4 E136{short_integer} 33m46 33r46 228m7 228r15
-34i4 E134{short_integer} 34m46 34r46 63m7 63r15 231m7 231r15
+33i4 E138{short_integer} 33m46 33r46 228m7 228r15
+34i4 E136{short_integer} 34m46 34r46 63m7 63r15 231m7 231r15
 35i4 E108{short_integer} 35m46 35r46 56m7 56r15 234m7 234r15
 36i4 E143{short_integer} 36m46 36r46 49m7 49r15 237m7 237r15
-37i4 E138{short_integer} 37m46 37r46 238m7 238r15
+37i4 E134{short_integer} 37m46 37r46 238m7 238r15
 38i4 E005{short_integer} 38m46 38r46 240m7 240r15
 40a4 Sec_Default_Sized_Stacks(8|45R9) 172m32 172r32
 42a4 Local_Priority_Specific_Dispatching{string} 160r9
@@ -309,7 +309,7 @@ X 5 b__run_tests_typecase.adb
 141p7*Finalize_Library_Objects{101P9} 142m25 142r25 176m7
 143i7*Binder_Sec_Stacks_Count{natural} 144m27 144r27 171m7
 145m7*Default_Sized_SS_Pool{6|67M9} 146m27 146r27 172m7
-243U14 Ada_Main_Program 244b<ada,_ada_run_tests_typecase>24 271s7
+243U14 Ada_Main_Program 244b<ada,_ada_run_tests_ponts>24 271s7
 252U17*Initialize 252>29 253b<c,__gnat_initialize>25 269s7
 252m29 Addr{6|67M9}
 255U17*Finalize 256b<c,__gnat_finalize>25 273s7
