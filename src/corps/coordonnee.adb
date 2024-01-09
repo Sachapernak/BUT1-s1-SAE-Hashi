@@ -1,12 +1,6 @@
 pragma Ada_2012;
 package body Coordonnee is
 
-   -- Supposons que Type_Coordonnee est défini comme ceci :
-   -- type Type_Coordonnee is record
-   --    Ligne   : Integer;
-   --    Colonne : Integer;
-   -- end record;
-
    ---------------------------
    -- ConstruireCoordonnees --
    ---------------------------
