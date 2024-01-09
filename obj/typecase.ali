@@ -13,7 +13,7 @@ U typecase%s		typecase.ads		ea991bf5 EE NE OO PK
 
 D system.ads		20210520051136 2ffa5114 system%s
 D typecase.ads		20240109073550 ea991bf5 typecase%s
-D typecase.adb		20240109082718 fab66274 typecase%b
+D typecase.adb		20240109082952 fab66274 typecase%b
 G a e
 G c Z s b [valeurtypecase typecase 15 13 none]
 G c Z s b [estile typecase 18 13 none]
