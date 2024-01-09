@@ -6,7 +6,7 @@ package body Grille is
    ----------------------
 
    function ConstruireGrille
-     (nbl : in integer; nbc : in integer) return Type_Grille
+     (Nbl : in Integer; Nbc : in Integer) return Type_Grille
    is
       G : Type_Grille;
    begin
@@ -19,41 +19,41 @@ package body Grille is
    -- nbLignes --
    --------------
 
-   function nbLignes (g : type_Grille) return Integer is
+   function NbLignes (G : Type_Grille) return Integer is
    begin
       return G.Nbl;
-   end nbLignes;
+   end NbLignes;
 
    ----------------
    -- nbColonnes --
    ----------------
 
-   function nbColonnes (g : type_Grille) return Integer is
+   function NbColonnes (G : Type_Grille) return Integer is
    begin
       return G.Nbc;
-   end nbColonnes;
+   end NbColonnes;
 
    -------------------
    -- estGrilleVide --
    -------------------
 
-   function estGrilleVide (G : in Type_Grille) return Boolean is
+   function EstGrilleVide (G : in Type_Grille) return Boolean is
    begin
       for J in 1..Nblignes(G) loop
          for I in 1..NbColonnes(G) loop
-            if not(Estmer(G.G(I,J))) then
+            if not(Estmer(Obtenirtypecase(G.G(I,J)))) then
                return False;
             end if;
          end loop;
       end loop;
       return True;
-   end estGrilleVide;
+   end EstGrilleVide;
 
    -----------------
    -- estComplete --
    -----------------
 
-   function estComplete (G : in Type_Grille) return Boolean is
+   function EstComplete (G : in Type_Grille) return Boolean is
    begin
       for J in 1..Nblignes(G) loop
          for I in 1..NbColonnes(G) loop
@@ -63,30 +63,30 @@ package body Grille is
          end loop;
       end loop;
       return True;
-   end estComplete;
+   end EstComplete;
 
    -----------
    -- nbIle --
    -----------
 
-   function nbIle (G : in Type_Grille) return Integer is
-
+   function NbIle (G : in Type_Grille) return Integer is
+      Resultat : Integer := 0;
    begin
       for J in 1..Nblignes(G) loop
          for I in 1..NbColonnes(G) loop
-            if Obtenirile(G.G(I,J)) then
+            if Estile(Obtenirtypecase(G.G(I,J))) then
                Resultat := Resultat + 1;
             end if;
          end loop;
       end loop;
       return Resultat;
-   end nbIle;
+   end NbIle;
 
    --------------------
    -- nbIleCompletes --
    --------------------
 
-   function nbIleCompletes (G : in Type_Grille) return Integer is
+   function NbIleCompletes (G : in Type_Grille) return Integer is
       Resultat : Integer := 0;
    begin
       for J in 1..Nblignes(G) loop
@@ -97,7 +97,7 @@ package body Grille is
          end loop;
       end loop;
       return Resultat;
-   end nbIleCompletes;
+   end NbIleCompletes;
 
    -----------------
    -- ObtenirCase --
@@ -114,37 +114,45 @@ package body Grille is
    -- aUnSuivant --
    ----------------
 
-   function aUnSuivant
-     (G : in Type_Grille; c : in Type_CaseHashi; o : Type_Orientation)
+   function AUnSuivant
+     (G : in Type_Grille; C : in Type_CaseHashi; O : Type_Orientation)
       return Boolean
    is
    begin
-      raise
-   end aUnSuivant;
+      if ValeurOrientation(O) mod 2 = 0 then
+         return Obtenircolonne(ObtenirCoordonnee(C))+ ValeurOrientation(O)/2 <= Nbcolonnes(G) and Obtenircolonne(ObtenirCoordonnee(C))+ ValeurOrientation(O)/2 >= 0;
+      else
+         return Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O) <= Nblignes(G) and Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O) >= 0;
+      end if;
+   end AUnSuivant;
 
    --------------------
    -- obtenirSuivant --
    --------------------
 
-   function obtenirSuivant
-     (G : in Type_Grille; c : in Type_CaseHashi; o : Type_Orientation)
+   function ObtenirSuivant
+     (G : in Type_Grille; C : in Type_CaseHashi; O : Type_Orientation)
       return Type_CaseHashi
    is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "obtenirSuivant unimplemented");
-      return raise Program_Error with "Unimplemented function obtenirSuivant";
-   end obtenirSuivant;
+      if not(Aunsuivant(G,C,O)) then
+         raise PAS_DE_SUIVANT;
+      else
+         if ValeurOrientation(O) mod 2 = 0 then
+            return ObtenirCase(G,ConstruireCoordonnees(Obtenirligne(ObtenirCoordonnee(C)),Obtenircolonne(ObtenirCoordonnee(C))+ValeurOrientation(O)/2));
+         else
+            return ObtenirCase(G,ConstruireCoordonnees(Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O),Obtenircolonne(ObtenirCoordonnee(C))));
+         end if;
+      end if;
+   end ObtenirSuivant;
 
    ------------------
    -- modifierCase --
    ------------------
 
-   procedure modifierCase (G : in out Type_Grille; c : in Type_CaseHashi) is
+   procedure ModifierCase (G : in out Type_Grille; C : in Type_CaseHashi) is
    begin
-      pragma Compile_Time_Warning
-        (Standard.True, "modifierCase unimplemented");
-      raise Program_Error with "Unimplemented procedure modifierCase";
-   end modifierCase;
+      G.G(Obtenirligne(ObtenirCoordonnee(C)),Obtenircolonne(ObtenirCoordonnee(C))) := C;
+   end ModifierCase;
 
 end Grille;

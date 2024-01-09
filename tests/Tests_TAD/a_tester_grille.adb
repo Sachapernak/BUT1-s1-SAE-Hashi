@@ -417,7 +417,7 @@ package body a_tester_Grille is
       Co := ConstruireCoordonnees (1, 2);
       c  := ConstruireCase (Co);
       I1 := ConstruireIle (1);
-      I1  := ModifierIle(I,1);
+      I1  := ModifierIle(I1,1);
       c  := modifierIle (c, I1);
       modifierCase (G, c);
       Nb := nbIleCompletes (G);
@@ -425,7 +425,7 @@ package body a_tester_Grille is
       Co := ConstruireCoordonnees (2, 1);
       c  := ConstruireCase (Co);
         I2  := ConstruireIle (1);
-      I2  := ModifierIle(I,1);
+      I2  := ModifierIle(I2,1);
      c  := modifierIle (c, I2);
       modifierCase (G, c);
       return nbIleCompletes (G) = Nb;
@@ -449,7 +449,7 @@ package body a_tester_Grille is
       Co := ConstruireCoordonnees (1, 2);
       c  := ConstruireCase (Co);
       I1 := ConstruireIle (1);
-      I1 := ModifierIle(I,1);
+      I1 := ModifierIle(I1,1);
       c  := modifierIle (c, I1);
       modifierCase (G, c);
       Nb := nbIleCompletes (G);
@@ -489,7 +489,7 @@ package body a_tester_Grille is
       Co2 := ConstruireCoordonnees (2, 1);
       c2  := ConstruireCase (Co2);
       I2  := ConstruireIle (1);
-      I2  := ModifierIle(I,1);
+      I2  := ModifierIle(I2,1);
       c2  := modifierIle (c2, I2);
       modifierCase (G, c2);
       return

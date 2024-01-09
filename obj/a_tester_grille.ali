@@ -16,7 +16,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U a_tester_grille%b	a_tester_grille.adb	3a6e5edd NE OO PK
+U a_tester_grille%b	a_tester_grille.adb	c7a440d8 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
@@ -45,7 +45,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 W types_tests%s		types_tests.ads		types_tests.ali
 
 D a_tester_grille.ads	20240109074654 de21c14b a_tester_grille%s
-D a_tester_grille.adb	20240109074654 eca4513f a_tester_grille%b
+D a_tester_grille.adb	20240109102822 116e4f3a a_tester_grille%b
 D ada.ads		20210520051132 76789da1 ada%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
 D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
@@ -228,6 +228,7 @@ G r c none [test_grille_p13 a_tester_grille 30 13 none] [construiregrille grille
 G r c none [test_grille_p13 a_tester_grille 30 13 none] [construirecoordonnees coordonnee 6 13 none]
 G r c none [test_grille_p13 a_tester_grille 30 13 none] [construirecase casehashi 13 13 none]
 G r c none [test_grille_p13 a_tester_grille 30 13 none] [construireile ile 18 13 none]
+G r c none [test_grille_p13 a_tester_grille 30 13 none] [modifierile ile 32 13 none]
 G r c none [test_grille_p13 a_tester_grille 30 13 none] [modifierile casehashi 35 13 none]
 G r c none [test_grille_p13 a_tester_grille 30 13 none] [modifiercase grille 67 14 none]
 G r c none [test_grille_p13 a_tester_grille 30 13 none] [estcomplete grille 34 13 none]
@@ -242,6 +243,7 @@ G r c none [test_grille_p15a a_tester_grille 32 13 none] [construiregrille grill
 G r c none [test_grille_p15a a_tester_grille 32 13 none] [construirecoordonnees coordonnee 6 13 none]
 G r c none [test_grille_p15a a_tester_grille 32 13 none] [construirecase casehashi 13 13 none]
 G r c none [test_grille_p15a a_tester_grille 32 13 none] [construireile ile 18 13 none]
+G r c none [test_grille_p15a a_tester_grille 32 13 none] [modifierile ile 32 13 none]
 G r c none [test_grille_p15a a_tester_grille 32 13 none] [modifierile casehashi 35 13 none]
 G r c none [test_grille_p15a a_tester_grille 32 13 none] [modifiercase grille 67 14 none]
 G r c none [test_grille_p15a a_tester_grille 32 13 none] [nbilecompletes grille 40 13 none]
@@ -249,6 +251,7 @@ G r c none [test_grille_p15b a_tester_grille 33 13 none] [construiregrille grill
 G r c none [test_grille_p15b a_tester_grille 33 13 none] [construirecoordonnees coordonnee 6 13 none]
 G r c none [test_grille_p15b a_tester_grille 33 13 none] [construirecase casehashi 13 13 none]
 G r c none [test_grille_p15b a_tester_grille 33 13 none] [construireile ile 18 13 none]
+G r c none [test_grille_p15b a_tester_grille 33 13 none] [modifierile ile 32 13 none]
 G r c none [test_grille_p15b a_tester_grille 33 13 none] [modifierile casehashi 35 13 none]
 G r c none [test_grille_p15b a_tester_grille 33 13 none] [modifiercase grille 67 14 none]
 G r c none [test_grille_p15b a_tester_grille 33 13 none] [nbilecompletes grille 40 13 none]
@@ -259,6 +262,7 @@ G r c none [test_grille_p16 a_tester_grille 34 13 none] [construireile ile 18 13
 G r c none [test_grille_p16 a_tester_grille 34 13 none] [modifierile casehashi 35 13 none]
 G r c none [test_grille_p16 a_tester_grille 34 13 none] [modifiercase grille 67 14 none]
 G r c none [test_grille_p16 a_tester_grille 34 13 none] [nbilecompletes grille 40 13 none]
+G r c none [test_grille_p16 a_tester_grille 34 13 none] [modifierile ile 32 13 none]
 G r c none [test_grille_p16 a_tester_grille 34 13 none] [obtenircase grille 49 13 none]
 G r c none [test_grille_p16 a_tester_grille 34 13 none] [Oeq casehashi 47 13 none]
 G r c none [test_grille_p16 a_tester_grille 34 13 none] [obtenirtypecase casehashi 16 13 none]
@@ -326,7 +330,7 @@ G r c none [construiregrilletest a_tester_grille 16 13 none] [construireile ile 
 G r c none [construiregrilletest a_tester_grille 16 13 none] [modifierile casehashi 35 13 none]
 G r c none [construiregrilletest a_tester_grille 16 13 none] [modifiercase grille 67 14 none]
 X 1 a_tester_grille.ads
-7K9*a_tester_Grille 119l5 119e20 2|14b14 697l5 697t20
+7K9*a_tester_Grille 119l5 119e20 2|14b14 703l5 703t20
 10V13*Test_Grille_P01{boolean} 48r8 2|61b13 66l8 66t23
 11V13*Test_Grille_P02{boolean} 50r8 2|72b13 77l8 77t23
 12V13*Test_Grille_P03{boolean} 52r8 2|83b13 88l8 88t23
@@ -346,26 +350,26 @@ X 1 a_tester_grille.ads
 27V13*Test_Grille_P11{boolean} 80r8 2|304b13 314l8 314t23
 28V13*Test_Grille_P12a{boolean} 82r8 2|320b13 330l8 330t24
 29V13*Test_Grille_P12b{boolean} 84r8 2|336b13 349l8 349t24
-30V13*Test_Grille_P13{boolean} 86r8 2|355b13 368l8 368t23
-31V13*Test_Grille_P14{boolean} 88r8 2|374b13 398l8 398t23
-32V13*Test_Grille_P15a{boolean} 90r8 2|404b13 428l8 428t24
-33V13*Test_Grille_P15b{boolean} 92r8 2|434b13 458l8 458t24
-34V13*Test_Grille_P16{boolean} 94r8 2|464b13 493l8 493t23
-35V13*Test_Grille_P17{boolean} 96r8 2|499b13 517l8 517t23
-36V13*Test_Grille_P18{boolean} 98r8 2|523b13 547l8 547t23
-38V13*Test_ile_Exception_1a{boolean} 100r8 2|553b13 563l8 563t29
-39V13*Test_ile_Exception_1b{boolean} 102r8 2|569b13 579l8 579t29
-40V13*Test_ile_Exception_1c{boolean} 104r8 2|585b13 595l8 595t29
-41V13*Test_ile_Exception_1d{boolean} 106r8 2|601b13 611l8 611t29
-42V13*Test_ile_Exception_2a{boolean} 108r8 2|617b13 632l8 632t29
-43V13*Test_ile_Exception_2b{boolean} 110r8 2|638b13 653l8 653t29
-44V13*Test_ile_Exception_2c{boolean} 112r8 2|659b13 674l8 674t29
-45V13*Test_ile_Exception_2d{boolean} 114r8 2|680b13 695l8 695t29
+30V13*Test_Grille_P13{boolean} 86r8 2|356b13 370l8 370t23
+31V13*Test_Grille_P14{boolean} 88r8 2|376b13 400l8 400t23
+32V13*Test_Grille_P15a{boolean} 90r8 2|406b13 432l8 432t24
+33V13*Test_Grille_P15b{boolean} 92r8 2|438b13 463l8 463t24
+34V13*Test_Grille_P16{boolean} 94r8 2|469b13 499l8 499t23
+35V13*Test_Grille_P17{boolean} 96r8 2|505b13 523l8 523t23
+36V13*Test_Grille_P18{boolean} 98r8 2|529b13 553l8 553t23
+38V13*Test_ile_Exception_1a{boolean} 100r8 2|559b13 569l8 569t29
+39V13*Test_ile_Exception_1b{boolean} 102r8 2|575b13 585l8 585t29
+40V13*Test_ile_Exception_1c{boolean} 104r8 2|591b13 601l8 601t29
+41V13*Test_ile_Exception_1d{boolean} 106r8 2|607b13 617l8 617t29
+42V13*Test_ile_Exception_2a{boolean} 108r8 2|623b13 638l8 638t29
+43V13*Test_ile_Exception_2b{boolean} 110r8 2|644b13 659l8 659t29
+44V13*Test_ile_Exception_2c{boolean} 112r8 2|665b13 680l8 680t29
+45V13*Test_ile_Exception_2d{boolean} 114r8 2|686b13 701l8 701t29
 47a4*Les_Tests(53|7R9) 117r23
 117a4*Resultats(boolean)
 X 2 a_tester_grille.adb
-16V13 ConstruireGrilleTest{23|10R9} 16b13 55l8 55t28 507s14 533s12 622s13
-. 643s13 664s13 685s13
+16V13 ConstruireGrilleTest{23|10R9} 16b13 55l8 55t28 513s14 539s12 628s13
+. 649s13 670s13 691s13
 17r7 G{23|10R9} 22m7 28m21 28r21 34m21 34r21 40m21 40r21 46m21 46r21 52m21
 . 52r21 54r15
 18r7 Co{22|3R9} 24m7 25r29 30m7 31r29 36m7 37r29 42m7 43r29 48m7 49r29
@@ -425,65 +429,65 @@ X 2 a_tester_grille.adb
 338r7 c{21|8R9} 344m7 346m7 346r26 347r24
 339r7 Co{22|3R9} 343m7 344r29
 340r7 I{24|9R9} 345m7 346r29
-356r7 G{23|10R9} 361m7 366m21 366r21 367r27
-357r7 c{21|8R9} 363m7 365m7 365r26 366r24
-358r7 Co{22|3R9} 362m7 363r29
-359r7 I{24|9R9} 364m7 365r29
-375r7 G{23|10R9} 383m7 389m21 389r21 390r20 396m21 396r21 397r21
-376r7 c{21|8R9} 386m7 388m7 388r26 389r24 393m7 395m7 395r26 396r24
-377r7 Co{22|3R9} 385m7 386r29 392m7 393r29
-378r7 I1{24|9R9} 387m7 388r29
-379r7 I2{24|9R9} 394m7 395r29
-380i7 Nb{integer} 390m7 397r26
-405r7 G{23|10R9} 413m7 419m21 419r21 420r29 426m21 426r21 427r30
-406r7 c{21|8R9} 416m7 418m7 418r26 419r24 423m7 425m7 425r26 426r24
-407r7 Co{22|3R9} 415m7 416r29 422m7 423r29
-408r7 I1{24|9R9} 417m7 418r29
-409r7 I2{24|9R9} 424m7 425r29
-410i7 Nb{integer} 420m7 427r35
-435r7 G{23|10R9} 443m7 449m21 449r21 450r29 456m21 456r21 457r30
-436r7 c{21|8R9} 446m7 448m7 448r26 449r24 453m7 455m7 455r26 456r24
-437r7 Co{22|3R9} 445m7 446r29 452m7 453r29
-438r7 I1{24|9R9} 447m7 448r29
-439r7 I2{24|9R9} 454m7 455r29
-440i7 Nb{integer} 450m7 457r35
-465r7 G{23|10R9} 475m7 481m21 481r21 482r29 488m21 488r21 490r22 490r52 492r42
-466r7 c1{21|8R9} 478m7 480m7 480r27 481r24 490r32
-467r7 c2{21|8R9} 485m7 487m7 487r27 488r24 490r62
-468r7 Co1{22|3R9} 477m7 478r30 490r25
-469r7 Co2{22|3R9} 484m7 485r30 490r55
-470r7 I1{24|9R9} 479m7 480r31
-471r7 I2{24|9R9} 486m7 487r31
-472i7 Nb{integer} 482m7
-500r7 G{23|10R9} 507m7 509r27 511r27 513r21 513r50 514r21 514r53 515r21 515r50
-. 516r21 516r49
-501r7 Co1{22|3R9} 508m7 509r30
-502r7 Co7{22|3R9} 510m7 511r30
-503r7 C1{21|8R9} 509m7 513r24 513r53 514r24 514r56
-504r7 C7{21|8R9} 511m7 515r24 515r53 516r24 516r52
-524r7 G{23|10R9} 533m7 536r30 537r33 540r30 541r33 545r30 546r30
-525r7 C1{21|8R9} 540m7 541r36 545r9
-526r7 C7{21|8R9} 536m7 537r36 546r9
-527r7 Co1{22|3R9} 539m7 540r33
-528r7 Co7{22|3R9} 535m7 536r33
-529r7 SuccC1{21|8R9} 541m7 546r33
-530r7 Succc7{21|8R9} 537m7 545r33
-554r7 g{23|10R9} 556m7
-570r7 g{23|10R9} 572m7
-586r7 g{23|10R9} 588m7
-602r7 g{23|10R9} 604m7
-618r7 g{23|10R9} 622m7 624r26 625r29
-619r7 C{21|8R9} 624m7 625m7 625r32
-620r7 Co{22|3R9} 623m7 624r29
-639r7 g{23|10R9} 643m7 645r26 646r29
-640r7 C{21|8R9} 645m7 646m7 646r32
-641r7 Co{22|3R9} 644m7 645r29
-660r7 g{23|10R9} 664m7 666r26 667r29
-661r7 C{21|8R9} 666m7 667m7 667r32
-662r7 Co{22|3R9} 665m7 666r29
-681r7 g{23|10R9} 685m7 687r26 688r29
-682r7 C{21|8R9} 687m7 688m7 688r32
-683r7 Co{22|3R9} 686m7 687r29
+357r7 G{23|10R9} 362m7 368m21 368r21 369r27
+358r7 c{21|8R9} 364m7 367m7 367r26 368r24
+359r7 Co{22|3R9} 363m7 364r29
+360r7 I{24|9R9} 365m7 366m7 366r25 367r29
+377r7 G{23|10R9} 385m7 391m21 391r21 392r20 398m21 398r21 399r21
+378r7 c{21|8R9} 388m7 390m7 390r26 391r24 395m7 397m7 397r26 398r24
+379r7 Co{22|3R9} 387m7 388r29 394m7 395r29
+380r7 I1{24|9R9} 389m7 390r29
+381r7 I2{24|9R9} 396m7 397r29
+382i7 Nb{integer} 392m7 399r26
+407r7 G{23|10R9} 415m7 422m21 422r21 423r29 430m21 430r21 431r30
+408r7 c{21|8R9} 418m7 421m7 421r26 422r24 426m7 429m6 429r25 430r24
+409r7 Co{22|3R9} 417m7 418r29 425m7 426r29
+410r7 I1{24|9R9} 419m7 420m7 420r26 421r29
+411r7 I2{24|9R9} 427m9 428m7 428r26 429r28
+412i7 Nb{integer} 423m7 431r35
+439r7 G{23|10R9} 447m7 454m21 454r21 455r29 461m21 461r21 462r30
+440r7 c{21|8R9} 450m7 453m7 453r26 454r24 458m7 460m7 460r26 461r24
+441r7 Co{22|3R9} 449m7 450r29 457m7 458r29
+442r7 I1{24|9R9} 451m7 452m7 452r25 453r29
+443r7 I2{24|9R9} 459m7 460r29
+444i7 Nb{integer} 455m7 462r35
+470r7 G{23|10R9} 480m7 486m21 486r21 487r29 494m21 494r21 496r22 496r52 498r42
+471r7 c1{21|8R9} 483m7 485m7 485r27 486r24 496r32
+472r7 c2{21|8R9} 490m7 493m7 493r27 494r24 496r62
+473r7 Co1{22|3R9} 482m7 483r30 496r25
+474r7 Co2{22|3R9} 489m7 490r30 496r55
+475r7 I1{24|9R9} 484m7 485r31
+476r7 I2{24|9R9} 491m7 492m7 492r26 493r31
+477i7 Nb{integer} 487m7
+506r7 G{23|10R9} 513m7 515r27 517r27 519r21 519r50 520r21 520r53 521r21 521r50
+. 522r21 522r49
+507r7 Co1{22|3R9} 514m7 515r30
+508r7 Co7{22|3R9} 516m7 517r30
+509r7 C1{21|8R9} 515m7 519r24 519r53 520r24 520r56
+510r7 C7{21|8R9} 517m7 521r24 521r53 522r24 522r52
+530r7 G{23|10R9} 539m7 542r30 543r33 546r30 547r33 551r30 552r30
+531r7 C1{21|8R9} 546m7 547r36 551r9
+532r7 C7{21|8R9} 542m7 543r36 552r9
+533r7 Co1{22|3R9} 545m7 546r33
+534r7 Co7{22|3R9} 541m7 542r33
+535r7 SuccC1{21|8R9} 547m7 552r33
+536r7 Succc7{21|8R9} 543m7 551r33
+560r7 g{23|10R9} 562m7
+576r7 g{23|10R9} 578m7
+592r7 g{23|10R9} 594m7
+608r7 g{23|10R9} 610m7
+624r7 g{23|10R9} 628m7 630r26 631r29
+625r7 C{21|8R9} 630m7 631m7 631r32
+626r7 Co{22|3R9} 629m7 630r29
+645r7 g{23|10R9} 649m7 651r26 652r29
+646r7 C{21|8R9} 651m7 652m7 652r32
+647r7 Co{22|3R9} 650m7 651r29
+666r7 g{23|10R9} 670m7 672r26 673r29
+667r7 C{21|8R9} 672m7 673m7 673r32
+668r7 Co{22|3R9} 671m7 672r29
+687r7 g{23|10R9} 691m7 693r26 694r29
+688r7 C{21|8R9} 693m7 694m7 694r32
+689r7 Co{22|3R9} 692m7 693r29
 X 3 ada.ads
 16K9*Ada 1|3r6 3r33 2|3r6 3r31 4r6 4r31 3|20e8
 X 8 a-inteio.ads
@@ -502,68 +506,69 @@ X 20 affichage.ads
 X 21 casehashi.ads
 6K9*CaseHashi 2|11w6 11r23 21|59e14
 8R9*Type_CaseHashi 2|19r12 142r12 158r12 174r12 190r12 206r13 207r13 227r13
-. 228r13 248r13 249r13 269r13 270r13 290r12 306r12 322r12 338r12 357r12 376r12
-. 406r12 436r12 466r13 467r13 503r13 504r13 525r16 526r16 529r16 530r16 619r12
-. 640r12 661r12 682r12 21|57e14
+. 228r13 248r13 249r13 269r13 270r13 290r12 306r12 322r12 338r12 358r12 378r12
+. 408r12 440r12 471r13 472r13 509r13 510r13 531r16 532r16 535r16 536r16 625r12
+. 646r12 667r12 688r12 21|57e14
 13V13*ConstruireCase{8R9} 2|25s13 31s13 37s13 43s13 49s13 147s13 163s13 179s13
-. 195s13 234s14 255s14 276s14 295s13 311s13 327s13 344s13 363s13 386s13 393s13
-. 416s13 423s13 446s13 453s13 478s14 485s14
-16V13*ObtenirTypeCase{52|3I9} 2|133s22 492s12
+. 195s13 234s14 255s14 276s14 295s13 311s13 327s13 344s13 364s13 388s13 395s13
+. 418s13 426s13 450s13 458s13 483s14 490s14
+16V13*ObtenirTypeCase{52|3I9} 2|133s22 498s12
 19V13*ObtenirCoordonnee{22|3R9} 2|215s14 236s14 257s14 278s14
-35V13*modifierIle{8R9} 2|27s13 33s13 39s13 45s13 51s13 346s13 365s13 388s13
-. 395s13 418s13 425s13 448s13 455s13 480s14 487s14
-47V14*"="{boolean} 2|490s30 490s60 545s12 546s12
+35V13*modifierIle{8R9} 2|27s13 33s13 39s13 45s13 51s13 346s13 367s13 390s13
+. 397s13 421s13 429s12 453s13 460s13 485s14 493s14
+47V14*"="{boolean} 2|496s30 496s60 551s12 552s12
 X 22 coordonnee.ads
 1K9*Coordonnee 1|1w6 1r22 22|21e15
 3R9*Type_Coordonnee 2|18r12 129r12 143r12 159r12 175r12 191r12 208r13 209r13
-. 229r13 230r13 250r13 251r13 271r13 272r13 291r12 307r12 323r12 339r12 358r12
-. 377r12 407r12 437r12 468r13 469r13 501r13 502r13 527r16 528r16 620r12 641r12
-. 662r12 683r12 22|19e14
+. 229r13 230r13 250r13 251r13 271r13 272r13 291r12 307r12 323r12 339r12 359r12
+. 379r12 409r12 441r12 473r13 474r13 507r13 508r13 533r16 534r16 626r12 647r12
+. 668r12 689r12 22|19e14
 6V13*ConstruireCoordonnees{3R9} 2|24s13 30s13 36s13 42s13 48s13 132s13 146s13
 . 162s13 178s13 194s13 212s14 233s14 254s14 275s14 294s13 310s13 326s13 343s13
-. 362s13 385s13 392s13 415s13 422s13 445s13 452s13 477s14 484s14 492s45 508s14
-. 510s14 535s17 539s17 623s13 644s13 665s13 686s13
+. 363s13 387s13 394s13 417s13 425s13 449s13 457s13 482s14 489s14 498s45 514s14
+. 516s14 541s17 545s17 629s13 650s13 671s13 692s13
 10V13*ObtenirLigne{integer} 2|216s14 237s14 258s14 279s14
 13V13*ObtenirColonne{integer} 2|216s41 237s41 258s41 279s41
 X 23 grille.ads
 8K9*Grille 2|7w6 7r23 23|81e11
 10R9*Type_Grille 2|16r41 17r12 62r11 73r11 84r11 95r11 106r11 117r11 128r12
 . 141r12 157r12 173r12 189r12 205r13 226r13 247r13 268r13 289r12 305r12 321r12
-. 337r12 356r12 375r12 405r12 435r12 465r13 500r13 524r16 554r11 570r11 586r11
-. 602r11 618r12 639r12 660r12 681r12 23|79e14
-12i4*TAILLE_MAX{integer} 2|572r30 604r34
-14X4*TAILLE_INVALIDE 2|559r12 575r12 591r12 607r12
-15X4*PAS_DE_SUIVANT 2|628r12 649r12 670r12 691r12
+. 337r12 357r12 377r12 407r12 439r12 470r13 506r13 530r16 560r11 576r11 592r11
+. 608r11 624r12 645r12 666r12 687r12 23|79e14
+12i4*TAILLE_MAX{integer} 2|578r30 610r34
+14X4*TAILLE_INVALIDE 2|565r12 581r12 597r12 613r12
+15X4*PAS_DE_SUIVANT 2|634r12 655r12 676r12 697r12
 22V13*ConstruireGrille{10R9} 2|22s12 64s12 75s12 86s12 97s12 108s12 119s12
 . 131s13 145s13 161s13 177s13 193s13 211s14 232s14 253s14 274s14 293s13 309s13
-. 325s13 342s13 361s13 383s12 413s12 443s12 475s12 556s12 572s12 588s12 604s12
+. 325s13 342s13 362s13 385s12 415s12 447s12 480s12 562s12 578s12 594s12 610s12
 25V13*nbLignes{integer} 2|65s14 297s14
 28V13*nbColonnes{integer} 2|76s14 313s14
 31V13*estGrilleVide{boolean} 2|87s14 329s14 348s18
-34V13*estComplete{boolean} 2|98s18 367s14
-37V13*nbIle{integer} 2|109s14 390s13 397s14
-40V13*nbIleCompletes{integer} 2|120s14 420s13 427s14 450s13 457s14 482s13
-49V13*ObtenirCase{21|8R9} 2|133s40 213s14 490s9 490s39 492s29 509s14 511s14
-. 536s17 540s17 624s13 645s13 666s13 687s13
-54V13*aUnSuivant{boolean} 2|149s14 165s14 181s14 197s14 513s9 513s38 514s9
-. 514s41 515s9 515s38 516s9 516s37
-62V13*obtenirSuivant{21|8R9} 2|214s14 235s14 256s14 277s14 537s17 541s17
-. 545s14 546s14 625s13 646s13 667s13 688s13
+34V13*estComplete{boolean} 2|98s18 369s14
+37V13*nbIle{integer} 2|109s14 392s13 399s14
+40V13*nbIleCompletes{integer} 2|120s14 423s13 431s14 455s13 462s14 487s13
+49V13*ObtenirCase{21|8R9} 2|133s40 213s14 496s9 496s39 498s29 515s14 517s14
+. 542s17 546s17 630s13 651s13 672s13 693s13
+54V13*aUnSuivant{boolean} 2|149s14 165s14 181s14 197s14 519s9 519s38 520s9
+. 520s41 521s9 521s38 522s9 522s37
+62V13*obtenirSuivant{21|8R9} 2|214s14 235s14 256s14 277s14 543s17 547s17
+. 551s14 552s14 631s13 652s13 673s13 694s13
 67U14*modifierCase 2|28s7 34s7 40s7 46s7 52s7 148s7 164s7 180s7 196s7 296s7
-. 312s7 328s7 347s7 366s7 389s7 396s7 419s7 426s7 449s7 456s7 481s7 488s7
+. 312s7 328s7 347s7 368s7 391s7 398s7 422s7 430s7 454s7 461s7 486s7 494s7
 X 24 ile.ads
 5K9*Ile 2|8w6 8r23 24|40e8
-9R9*Type_Ile 2|20r12 340r12 359r12 378r12 379r12 408r12 409r12 438r12 439r12
-. 470r13 471r13 24|38e14
-18V13*ConstruireIle{9R9} 2|26s13 32s13 38s13 44s13 50s13 345s13 364s13 387s13
-. 394s13 417s13 424s13 447s13 454s13 479s14 486s14
+9R9*Type_Ile 2|20r12 340r12 360r12 380r12 381r12 410r12 411r12 442r12 443r12
+. 475r13 476r13 24|38e14
+18V13*ConstruireIle{9R9} 2|26s13 32s13 38s13 44s13 50s13 345s13 365s13 389s13
+. 396s13 419s13 427s16 451s13 459s13 484s14 491s14
+32V13*modifierIle{9R9} 2|366s13 420s14 428s14 452s13 492s14
 X 27 orientation.ads
 1K9*Orientation 2|10w6 10r23 27|31e16
 3I9*Type_Orientation<short_short_integer>
-6i4*NORD{3I9} 2|149r32 214r36 513r28 515r28 625r35
-9i4*SUD{3I9} 2|165r32 235r36 513r57 515r57 646r35
-12i4*EST{3I9} 2|181r32 256r36 514r28 516r28 541r40 546r41 667r35
-15i4*OUEST{3I9} 2|197r32 277r36 514r60 516r56 537r40 545r41 688r35
+6i4*NORD{3I9} 2|149r32 214r36 519r28 521r28 631r35
+9i4*SUD{3I9} 2|165r32 235r36 519r57 521r57 652r35
+12i4*EST{3I9} 2|181r32 256r36 520r28 522r28 547r40 552r41 673r35
+15i4*OUEST{3I9} 2|197r32 277r36 520r60 522r56 543r40 551r41 694r35
 X 28 pont.ads
 1K9*Pont 2|9w6 9r23 28|32e9
 X 30 system.ads
@@ -577,7 +582,7 @@ X 44 s-stalib.adb
 X 52 typecase.ads
 1K9*TypeCase 2|12w6 12r23 52|31e13
 3I9*Type_TypeCase<short_short_integer>
-24V13*estMer{boolean} 2|133s14 491s9
+24V13*estMer{boolean} 2|133s14 497s9
 X 53 types_tests.ads
 3K9*Types_Tests 1|5w6 5r23 53|12e16
 7R9*Test_Unitaire 1|47r54 53|10e14
