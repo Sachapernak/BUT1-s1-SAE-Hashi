@@ -7,11 +7,13 @@ package body Ile is
    -------------------
 
    function ConstruireIle (v : in Integer) return Type_Ile is
+      ile : Type_Ile;
    begin
       if v <= 0 or v > VALEUR_MAX then
-         raise VALEUR_NOEUD;
+         raise VALEUR_ILE_INVALIDE;
       end if;
-      return raise Program_Error with "Unimplemented function ConstruireIle";
+      ile.v := v;
+      return ile;
    end ConstruireIle;
 
    -------------------

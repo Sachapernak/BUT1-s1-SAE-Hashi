@@ -4,6 +4,8 @@ with Pont ; use Pont;
 
 package Ile is
 
+   VALEUR_MAX : constant Integer := 8;
+ 
    type Type_Ile is private;
 
    VALEUR_ILE_INVALIDE : exception;
@@ -12,7 +14,7 @@ package Ile is
 
    -- construit une ile ayant la valeur v
    -- nécessite 0 < v <= 8
-   -- lève l'exception VALEUR_NOEUD_INVALIDE si 0 <= v ou v > 8
+   -- lève l'exception VALEUR_ILE_INVALIDE si 0 <= v ou v > 8
    function ConstruireIle (v : in Integer ) return Type_Ile;
 
    -- retourne la valence de l'île i
