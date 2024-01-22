@@ -12,9 +12,9 @@ package body Grille is
    is
       G : Type_Grille;
    begin
-      if Nbl > TAILLE_MAX Or Nbl < 1 then
+      if Nbl > TAILLE_MAX Or Nbl <= 1 then
          raise TAILLE_INVALIDE;
-      elsif Nbc > TAILLE_MAX or Nbc < 1 then
+      elsif Nbc > TAILLE_MAX or Nbc <= 1 then
          raise TAILLE_INVALIDE;
       end if;
       G.Nbl := Nbl;

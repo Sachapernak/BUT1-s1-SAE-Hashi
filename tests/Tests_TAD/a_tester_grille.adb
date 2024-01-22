@@ -577,7 +577,7 @@ package body a_tester_Grille is
    function Test_ile_Exception_1a return Boolean is
       g : Type_Grille;
    begin
-      g := ConstruireGrille (-1, 10);
+      g := ConstruireGrille (1, 10);
       return False;
    exception
       when TAILLE_INVALIDE =>
@@ -609,7 +609,7 @@ package body a_tester_Grille is
    function Test_ile_Exception_1c return Boolean is
       g : Type_Grille;
    begin
-      g := ConstruireGrille (10, -1);
+      g := ConstruireGrille (10, 1);
       return False;
    exception
       when TAILLE_INVALIDE =>
