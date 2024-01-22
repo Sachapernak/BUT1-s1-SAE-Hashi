@@ -1,6 +1,5 @@
 package Pont is
 
-
    type Type_Pont is private;
 
    -- crée un Arete de valeur UN
@@ -15,10 +14,11 @@ package Pont is
     -- retourne la valeur du Arete c
    function obtenirValeur (p : in Type_Pont) return Integer;
 
-   -- retourne VRAI si la valeur du Arete c est POTENTIEL et FAUX sinon
+   -- retourne VRAI si la valeur du pont p est POTENTIEL ou UN
+   -- et FAUX sinon
    function estPotentiel (p : in Type_Pont) return Boolean;
 
-   -- retourne VRAI si l'Arete a la valeur UN ou DEUX
+   -- retourne VRAI si le pont p la valeur UN ou DEUX
    function EstInstancie (p : in Type_Pont) return Boolean;
 
    -- retourne VRAI si le Arete c1 est égal au Arc c2

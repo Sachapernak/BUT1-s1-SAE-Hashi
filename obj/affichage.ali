@@ -15,7 +15,7 @@ W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 
-U affichage%s		affichage.ads		dc240ca7 EE NE OO PK
+U affichage%s		affichage.ads		a90789e1 EE NE OO PK
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W casehashi%s		casehashi.adb		casehashi.ali
 W coordonnee%s		coordonnee.adb		coordonnee.ali
@@ -23,7 +23,7 @@ W grille%s		grille.adb		grille.ali
 W ile%s			ile.adb			ile.ali
 W orientation%s		orientation.adb		orientation.ali
 W pont%s		pont.adb		pont.ali
-W resolution_hashi%s	resolution_hashi.ads	resolution_hashi.ali
+W resolution_hashi%s	resolution_hashi.adb	resolution_hashi.ali
 W typecase%s		typecase.adb		typecase.ali
 
 D ada.ads		20210520051132 76789da1 ada%s
@@ -38,17 +38,17 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D affichage.ads		20240109074654 c07f7ff8 affichage%s
-D affichage.adb		20240109074654 a25a8a86 affichage%b
-D casehashi.ads		20240109074654 509b8585 casehashi%s
-D coordonnee.ads	20240109074654 b1b28967 coordonnee%s
-D grille.ads		20240109074654 4ff9c45c grille%s
-D ile.ads		20240109091536 e7306d41 ile%s
+D affichage.ads		20240122073408 c07f7ff8 affichage%s
+D affichage.adb		20240122073408 a25a8a86 affichage%b
+D casehashi.ads		20240122073408 509b8585 casehashi%s
+D coordonnee.ads	20240122073408 b1b28967 coordonnee%s
+D grille.ads		20240122073408 3ada411a grille%s
+D ile.ads		20240122074308 e7306d41 ile%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D orientation.ads	20240109074654 67230454 orientation%s
-D pont.ads		20240109091756 e5c3dea1 pont%s
-D resolution_hashi.ads	20240109074654 3dc217a0 resolution_hashi%s
+D orientation.ads	20240122073408 67230454 orientation%s
+D pont.ads		20240122073408 e5c3dea1 pont%s
+D resolution_hashi.ads	20240122073408 3dc217a0 resolution_hashi%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -64,7 +64,7 @@ D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D typecase.ads		20240109074654 ea991bf5 typecase%s
+D typecase.ads		20240122073408 ea991bf5 typecase%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z s b [afficherpont affichage 16 14 none]
@@ -79,14 +79,14 @@ G c Z s b [afficherresultat affichage 44 14 none]
 G r c none [afficherpont affichage 16 14 none] [Oeq pont 25 13 none]
 G r c none [affichercoordonnee affichage 22 14 none] [obtenirligne coordonnee 10 13 none]
 G r c none [affichercoordonnee affichage 22 14 none] [obtenircolonne coordonnee 13 13 none]
-G r c none [afficherile affichage 25 14 none] [obtenirvaleur ile 21 13 none]
+G r c none [afficherile affichage 25 14 none] [obtenirvaleur ile 20 13 none]
 G r c none [affichertypecase affichage 28 14 none] [estmer typecase 24 13 none]
 G r c none [affichertypecase affichage 28 14 none] [estile typecase 18 13 none]
 G r c none [affichercase affichage 31 14 none] [obtenirtypecase casehashi 16 13 none]
 G r c none [affichercase affichage 31 14 none] [estmer typecase 24 13 none]
 G r c none [affichercase affichage 31 14 none] [estile typecase 18 13 none]
 G r c none [affichercase affichage 31 14 none] [obtenirile casehashi 24 13 none]
-G r c none [affichercase affichage 31 14 none] [obtenirvaleur ile 21 13 none]
+G r c none [affichercase affichage 31 14 none] [obtenirvaleur ile 20 13 none]
 G r c none [affichercase affichage 31 14 none] [obtenirpont casehashi 29 13 none]
 G r c none [affichercase affichage 31 14 none] [Oeq pont 25 13 none]
 G r c none [affichergrille affichage 34 14 none] [nbcolonnes grille 28 13 none]
@@ -97,7 +97,7 @@ G r c none [affichergrille affichage 34 14 none] [obtenirtypecase casehashi 16 1
 G r c none [affichergrille affichage 34 14 none] [estmer typecase 24 13 none]
 G r c none [affichergrille affichage 34 14 none] [estile typecase 18 13 none]
 G r c none [affichergrille affichage 34 14 none] [obtenirile casehashi 24 13 none]
-G r c none [affichergrille affichage 34 14 none] [obtenirvaleur ile 21 13 none]
+G r c none [affichergrille affichage 34 14 none] [obtenirvaleur ile 20 13 none]
 G r c none [affichergrille affichage 34 14 none] [obtenirpont casehashi 29 13 none]
 G r c none [affichergrille affichage 34 14 none] [Oeq pont 25 13 none]
 G r c none [affichertableausuccesseurs affichage 37 14 none] [obtenircoordonnee casehashi 19 13 none]
@@ -107,7 +107,7 @@ G r c none [affichertableausuccesseurs affichage 37 14 none] [obtenirtypecase ca
 G r c none [affichertableausuccesseurs affichage 37 14 none] [estmer typecase 24 13 none]
 G r c none [affichertableausuccesseurs affichage 37 14 none] [estile typecase 18 13 none]
 G r c none [affichertableausuccesseurs affichage 37 14 none] [obtenirile casehashi 24 13 none]
-G r c none [affichertableausuccesseurs affichage 37 14 none] [obtenirvaleur ile 21 13 none]
+G r c none [affichertableausuccesseurs affichage 37 14 none] [obtenirvaleur ile 20 13 none]
 G r c none [affichertableausuccesseurs affichage 37 14 none] [obtenirpont casehashi 29 13 none]
 G r c none [affichertableausuccesseurs affichage 37 14 none] [Oeq pont 25 13 none]
 G r c none [afficherresultat affichage 44 14 none] [nbile grille 37 13 none]
@@ -133,7 +133,7 @@ X 13 affichage.ads
 12i4*NB_POSITIONS{integer}
 13i4*NUL{integer}
 16U14*AfficherPont 16>28 16>46 14|11b14 33l8 33t20 110s16
-16i28 a{22|4I9} 14|11b28 14r10 17r13 20r13 23r13 26r13
+16i28 a{22|3I9} 14|11b28 14r10 17r13 20r13 23r13 26r13
 16e46 Sens{character} 14|11b47 17r24 20r24 23r26 26r26
 19U14*AfficherOrientation 19>35 14|39b14 56l8 56t27
 19i35 o{21|3I9} 14|39b35 42r10 45r13 48r13
@@ -141,7 +141,7 @@ X 13 affichage.ads
 . 161s22
 22r34 C{16|3R9} 14|62b34 65r26 67r28
 25U14*AfficherIle 25>27 14|75b14 79l8 79t19 106s10
-25r27 n{18|9R9} 14|75b27 77r27
+25r27 n{18|8R9} 14|75b27 77r27
 28U14*AfficherTypeCase 28>32 14|85b14 94l8 94t24
 28i32 t{39|3I9} 14|85b32 87r18 89r21
 31U14*AfficherCase 31>28 14|99b14 112l8 112t20 138s13 157s7 158s69 159s68
@@ -168,12 +168,12 @@ X 14 affichage.adb
 131i11 I{integer} 132r15 135r42
 134i14 J{integer} 135r45
 X 15 casehashi.ads
-6K9*CaseHashi 13|7w6 7r21 15|59e14
-8R9*Type_CaseHashi 13|31r32 38r49 14|99r32 120r12 151r49 15|57e14
+6K9*CaseHashi 13|7w6 7r21 15|61e14
+8R9*Type_CaseHashi 13|31r32 38r49 14|99r32 120r12 151r49 15|59e14
 16V13*ObtenirTypeCase{39|3I9} 14|102s12
 19V13*ObtenirCoordonnee{16|3R9} 14|156s65 158s41 159s41 160s41 161s41
-24V13*ObtenirIle{18|9R9} 14|106s23
-29V13*ObtenirPont{22|4I9} 14|110s30
+24V13*ObtenirIle{18|8R9} 14|106s23
+29V13*ObtenirPont{22|3I9} 14|110s30
 X 16 coordonnee.ads
 1K9*Coordonnee 13|1w6 1r22 16|21e15
 3R9*Type_Coordonnee 13|22r41 14|62r41 119r12 16|19e14
@@ -189,9 +189,9 @@ X 17 grille.ads
 40V13*nbIleCompletes{integer} 14|178s27
 49V13*ObtenirCase{15|8R9} 14|136s19
 X 18 ile.ads
-5K9*Ile 13|5w6 5r16 18|40e8
-9R9*Type_Ile 13|25r34 14|75r34 18|38e14
-21V13*ObtenirValeur{integer} 14|77s12
+5K9*Ile 13|5w6 5r16 18|39e8
+8R9*Type_Ile 13|25r34 14|75r34 18|37e14
+20V13*ObtenirValeur{integer} 14|77s12
 X 21 orientation.ads
 1K9*Orientation 13|4w6 4r24 21|31e16
 3I9*Type_Orientation<short_short_integer> 13|19r42 14|39r42
@@ -200,10 +200,10 @@ X 21 orientation.ads
 12i4*EST{3I9} 14|48r17
 X 22 pont.ads
 1K9*Pont 13|3w6 3r17 22|32e9
-4I9*Type_Pont<short_short_integer> 13|16r35 14|11r35
-7i4*UN{4I9} 14|17r17 20r17
-10i4*DEUX{4I9} 14|23r17 26r17
-13i4*POTENTIEL{4I9} 14|14r14
+3I9*Type_Pont<short_short_integer> 13|16r35 14|11r35
+6i4*UN{3I9} 14|17r17 20r17
+9i4*DEUX{3I9} 14|23r17 26r17
+12i4*POTENTIEL{3I9} 14|14r14
 25V14*"="{boolean} 14|14s12 17s15 20s15 23s15 26s15
 X 23 resolution_hashi.ads
 6K9*Resolution_Hashi 13|8w6 8r29 23|64e21

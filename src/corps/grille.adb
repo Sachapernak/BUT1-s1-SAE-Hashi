@@ -1,5 +1,6 @@
 pragma Ada_2012;
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 package body Grille is
 
    ----------------------
@@ -11,16 +12,16 @@ package body Grille is
    is
       G : Type_Grille;
    begin
-      if Nbl > TAILLE_MAX and Nbl < 0 then
+      if Nbl > TAILLE_MAX Or Nbl < 1 then
          raise TAILLE_INVALIDE;
-      elsif Nbc > TAILLE_MAX and Nbc < 0 then
+      elsif Nbc > TAILLE_MAX or Nbc < 1 then
          raise TAILLE_INVALIDE;
       end if;
       G.Nbl := Nbl;
       G.Nbc := Nbc;
-      for i in 1..nbl loop
-        for j in 1..Nbc loop
-            G.g(i,j) := ConstruireCase(ConstruireCoordonnees(i,j));
+      for I in 1..Nbl loop
+         for J in 1..Nbc loop
+            G.G(I,J) := ConstruireCase(ConstruireCoordonnees(I,J));
          end loop;
       end loop;
 
@@ -54,7 +55,7 @@ package body Grille is
    begin
       for I in 1..Nblignes(G) loop
          for J in 1..NbColonnes(G) loop
-            if estIle(ObtenirTypeCase(G.g(i,j))) then
+            if EstIle(ObtenirTypeCase(G.G(I,J))) then
                return False;
             end if;
          end loop;
@@ -68,17 +69,7 @@ package body Grille is
 
    function EstComplete (G : in Type_Grille) return Boolean is
    begin
-      if EstGrilleVide(G) then
-         return False;
-      end if;
-      for I in 1..Nblignes(G) loop
-         for J in 1..NbColonnes(G) loop
-            if estIle(ObtenirTypeCase(G.G(I,J))) and then (not EstIleComplete(Obtenirile(G.G(I,J)))) then
-               return False;
-            end if;
-         end loop;
-      end loop;
-      return True;
+      return NbIle(G)=NbIleCompletes(G) and not EstGrilleVide(G);
    end EstComplete;
 
    -----------
@@ -88,15 +79,20 @@ package body Grille is
    function NbIle (G : in Type_Grille) return Integer is
       Resultat : Integer := 0;
    begin
-      for I in 1..Nblignes(G) loop
-         for J in 1..NbColonnes(G) loop
-            if Estile(Obtenirtypecase(G.G(I,J))) then
-               Resultat := Resultat + 1;
-               Put_Line(Integer'Image(Resultat));
-            end if;
+      if EstGrilleVide(G) then
+         return Resultat;
+      else
+
+         for I in 1..Nblignes(G) loop
+            for J in 1..NbColonnes(G) loop
+               if Estile(ObtenirTypeCase(G.G(I,J))) then
+                  Resultat := Resultat + 1;
+
+               end if;
+            end loop;
          end loop;
-      end loop;
-      return Resultat;
+         return Resultat;
+      end if;
    end NbIle;
 
    --------------------
@@ -106,13 +102,18 @@ package body Grille is
    function NbIleCompletes (G : in Type_Grille) return Integer is
       Resultat : Integer := 0;
    begin
+      if EstGrilleVide(G) then
+         return Resultat;
+      end if;
       for I in 1..Nblignes(G) loop
          for J in 1..NbColonnes(G) loop
-            if EstIleComplete(Obtenirile(G.G(I,J))) then
+            if EstIle(ObtenirTypeCase(G.G(I,J))) and then EstIleComplete(ObtenirIle(G.G(I,J))) then
+
                Resultat := Resultat + 1;
             end if;
          end loop;
       end loop;
+
       return Resultat;
    end NbIleCompletes;
 
@@ -124,6 +125,7 @@ package body Grille is
      (G : in Type_Grille; Co : in Type_Coordonnee) return Type_CaseHashi
    is
    begin
+
       return G.G(Obtenirligne(Co),ObtenirColonne(Co));
    end ObtenirCase;
 
@@ -137,9 +139,10 @@ package body Grille is
    is
    begin
       if ValeurOrientation(O) mod 2 = 0 then
-         return Obtenircolonne(ObtenirCoordonnee(C))+ ValeurOrientation(O)/2 <= Nbcolonnes(G) and Obtenircolonne(ObtenirCoordonnee(C))+ ValeurOrientation(O)/2 >= 0;
+
+         return Obtenircolonne(ObtenirCoordonnee(C))- ValeurOrientation(O)/2 <= Nbcolonnes(G) and Obtenircolonne(ObtenirCoordonnee(C))- ValeurOrientation(O)/2 > 0;
       else
-         return Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O) <= Nblignes(G) and Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O) >= 0;
+         return Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O) <= Nblignes(G) and Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O) > 0;
       end if;
    end AUnSuivant;
 
@@ -156,7 +159,7 @@ package body Grille is
          raise PAS_DE_SUIVANT;
       else
          if ValeurOrientation(O) mod 2 = 0 then
-            return ObtenirCase(G,ConstruireCoordonnees(Obtenirligne(ObtenirCoordonnee(C)),Obtenircolonne(ObtenirCoordonnee(C))+ValeurOrientation(O)/2));
+            return ObtenirCase(G,ConstruireCoordonnees(Obtenirligne(ObtenirCoordonnee(C)),Obtenircolonne(ObtenirCoordonnee(C))-ValeurOrientation(O)/2));
          else
             return ObtenirCase(G,ConstruireCoordonnees(Obtenirligne(ObtenirCoordonnee(C))+ValeurOrientation(O),Obtenircolonne(ObtenirCoordonnee(C))));
          end if;
@@ -167,9 +170,12 @@ package body Grille is
    -- modifierCase --
    ------------------
 
-   procedure ModifierCase (G : in out Type_Grille; C : in Type_CaseHashi) is
+   function modifierCase (G : in Type_Grille; C : in Type_CaseHashi) return Type_Grille is
+      Grid : Type_Grille;
    begin
-      G.G(Obtenirligne(ObtenirCoordonnee(C)),Obtenircolonne(ObtenirCoordonnee(C))) := C;
-   end ModifierCase;
+      Grid := G;
+      Grid.G(Obtenirligne(ObtenirCoordonnee(C)),Obtenircolonne(ObtenirCoordonnee(C))) := C;
+      return Grid;
+   end modifierCase;
 
 end Grille;

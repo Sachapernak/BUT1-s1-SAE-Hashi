@@ -11,7 +11,7 @@ package TypeCase is
    -- case de type Mer
    MER : constant Type_TypeCase;
 
-   -- retourne la valeur du Orientation c
+   -- retourne la valeur du type de case t
    function ValeurTypeCase (t : in Type_TypeCase) return Integer;
 
    -- retourne VRAI si t est une NOEUD et FAUX sinon

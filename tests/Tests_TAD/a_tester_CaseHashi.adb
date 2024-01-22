@@ -120,7 +120,93 @@ package body a_tester_CaseHashi is
       return ObtenirPont(C) = p ;
    end Test_CaseHashi_P8;
 
-   --------------------------------
+   -----------------------
+   -- Test_CaseHashi_P9a --
+   -----------------------
+
+   function Test_CaseHashi_P9a return Boolean is
+      c1 : Type_CaseHashi;
+      c2 : Type_CaseHashi;
+   begin
+      c1 := ConstruireCase (ConstruireCoordonnees(2,5));
+      c2 := ConstruireCase (ConstruireCoordonnees(2,5));
+      return C1 = c2;
+   end Test_CaseHashi_P9a;
+
+   -----------------------
+   -- Test_CaseHashi_P9b --
+   -----------------------
+
+   function Test_CaseHashi_P9b return Boolean is
+      c1 : Type_CaseHashi;
+      c2 : Type_CaseHashi;
+   begin
+      c1 := ConstruireCase (ConstruireCoordonnees(2,5));
+      c2 := ConstruireCase (ConstruireCoordonnees(5,2));
+      return C1 /= c2;
+   end Test_CaseHashi_P9b;
+
+   -----------------------
+   -- Test_CaseHashi_P10a --
+   -----------------------
+
+   function Test_CaseHashi_P10a return Boolean is
+      c1 : Type_CaseHashi;
+      c2 : Type_CaseHashi;
+   begin
+      c1 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C1 := ModifierIle (C1, ConstruireIle(2));
+      c2 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C2 := ModifierIle (C2, ConstruireIle(2));
+      return C1 = c2;
+   end Test_CaseHashi_P10a;
+
+   -----------------------
+   -- Test_CaseHashi_P10b --
+   -----------------------
+
+   function Test_CaseHashi_P10b return Boolean is
+      c1 : Type_CaseHashi;
+      c2 : Type_CaseHashi;
+   begin
+      c1 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C1 := ModifierIle (C1, ConstruireIle(2));
+      c2 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C2 := ModifierIle (C2, ConstruireIle(5));
+      return C1 /= c2;
+   end Test_CaseHashi_P10b;
+
+   -----------------------
+   -- Test_CaseHashi_P11a --
+   -----------------------
+
+   function Test_CaseHashi_P11a return Boolean is
+      c1 : Type_CaseHashi;
+      c2 : Type_CaseHashi;
+   begin
+      c1 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C1 := ModifierPont (C1, UN);
+      c2 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C2 := ModifierPont (C2, UN);
+      return C1 = c2;
+   end Test_CaseHashi_P11a;
+
+   -----------------------
+   -- Test_CaseHashi_P11b --
+   -----------------------
+
+   function Test_CaseHashi_P11b return Boolean is
+      c1 : Type_CaseHashi;
+      c2 : Type_CaseHashi;
+   begin
+      c1 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C1 := ModifierPont (C1, UN);
+      c2 := ConstruireCase (ConstruireCoordonnees(2,5));
+      C2 := ModifierPont (C2, DEUX);
+      return C1 /= c2;
+   end Test_CaseHashi_P11b;
+
+--------------------------------
    -- Test_CaseHashi_Exception_1 --
    --------------------------------
 

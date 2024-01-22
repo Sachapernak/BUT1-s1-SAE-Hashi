@@ -1,4 +1,6 @@
 pragma Ada_2012;
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 package body Ile is
 
 
@@ -6,48 +8,52 @@ package body Ile is
    -- ConstruireIle --
    -------------------
 
-   function ConstruireIle (v : in Integer) return Type_Ile is
-      ile : Type_Ile;
+   function ConstruireIle (V : in Integer) return Type_Ile is
+      Ile : Type_Ile;
    begin
-      if v <= 0 or v > VALEUR_MAX then
+
+      if V <= 0 or V > VALEUR_MAX then
+
          raise VALEUR_ILE_INVALIDE;
       end if;
-      ile.v := v;
-      return ile;
+      Ile.V := V;
+      return Ile;
    end ConstruireIle;
 
    -------------------
    -- ObtenirValeur --
    -------------------
 
-   function ObtenirValeur (i : in Type_Ile) return Integer is
+   function ObtenirValeur (I : in Type_Ile) return Integer is
    begin
-      return i.v;
+      return I.V;
    end ObtenirValeur;
 
    --------------------
    -- estIleComplete --
    --------------------
 
-   function estIleComplete (i : in Type_Ile) return Boolean is
+   function EstIleComplete (I : in Type_Ile) return Boolean is
    begin
-      return i.v = 0;
-   end estIleComplete;
+
+      return I.V = 0;
+   end EstIleComplete;
 
    -----------------
    -- modifierIle --
    -----------------
 
-   function modifierIle (i : in Type_Ile; p : in Integer) return type_ile is
-      ile : Type_Ile;
+   function ModifierIle (I : in Type_Ile; P : in Integer) return Type_Ile is
+      Ile : Type_Ile;
    begin
-      if p < 1 or p > 2 then
+      if P < 1 or P > 2 then
          raise VALEUR_PONT_INVALIDE;
-      elsif i.v - p < 0 then
+      elsif I.V - P < 0 then
+
          raise PONT_IMPOSSIBLE;
       end if;
-      ile.v := i.v - p;
-      return ile;
-   end modifierIle;
+      Ile.V := I.V - P;
+      return Ile;
+   end ModifierIle;
 
 end Ile;

@@ -15,10 +15,16 @@ package a_tester_CaseHashi is
    function Test_CaseHashi_P6 return Boolean; --6
    function Test_CaseHashi_P7 return Boolean; --7
    function Test_CaseHashi_P8 return Boolean; --8
-   function Test_CaseHashi_Exception_1 return Boolean; --9
-   function Test_CaseHashi_Exception_2 return Boolean; --10
-   function Test_CaseHashi_Exception_3 return Boolean; --11
-   function Test_CaseHashi_Exception_4 return Boolean; --12
+   function Test_CaseHashi_P9a return Boolean; --9
+   function Test_CaseHashi_P9b return Boolean; --10
+   function Test_CaseHashi_P10a return Boolean; --11
+   function Test_CaseHashi_P10b return Boolean; --12
+   function Test_CaseHashi_P11a return Boolean; --13
+   function Test_CaseHashi_P11b return Boolean; --14
+   function Test_CaseHashi_Exception_1 return Boolean; --15
+   function Test_CaseHashi_Exception_2 return Boolean; --16
+   function Test_CaseHashi_Exception_3 return Boolean; --17
+   function Test_CaseHashi_Exception_4 return Boolean; --18
 
    Les_Tests : constant array (Positive range <>) of Test_Unitaire :=
      ((Test_CaseHashi_P1'Access,
@@ -37,6 +43,18 @@ package a_tester_CaseHashi is
        To_Unbounded_String ("echec de la propriete 7 CaseHashi")),
       (Test_CaseHashi_P8'Access,
        To_Unbounded_String ("echec de la propriete 8 CaseHashi")),
+     (Test_CaseHashi_P9a'Access,
+       To_Unbounded_String ("echec de la propriete 9a CaseHashi")),
+     (Test_CaseHashi_P9b'Access,
+       To_Unbounded_String ("echec de la propriete 9b CaseHashi")),
+    (Test_CaseHashi_P10a'Access,
+       To_Unbounded_String ("echec de la propriete 10a CaseHashi")),
+    (Test_CaseHashi_P10b'Access,
+       To_Unbounded_String ("echec de la propriete 10b CaseHashi")),
+     (Test_CaseHashi_P11a'Access,
+       To_Unbounded_String ("echec de la propriete 11a CaseHashi")),
+     (Test_CaseHashi_P11b'Access,
+       To_Unbounded_String ("echec de la propriete 11b CaseHashi")),
       (Test_CaseHashi_Exception_1'Access,
        To_Unbounded_String ("echec de l'exception 1 CaseHashi")),
       (Test_CaseHashi_Exception_2'Access,

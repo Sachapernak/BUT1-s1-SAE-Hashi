@@ -59,22 +59,24 @@ package body CaseHashi is
    -- modifierIle --
    -----------------
    
-   function modifierIle(C: in Type_CaseHashi; I: in Type_Ile) return Type_CaseHashi is
-      ca : Type_CaseHashi;
+    function modifierIle
+     (C : in Type_CaseHashi; I : in Type_Ile) return Type_CaseHashi
+   is
+      NewC : Type_CaseHashi;
    begin
-      if estPont(C.T) then
+      if EstPont(C.T) then
          raise TYPE_INCOMPATIBLE;
       end if;
-      
-      ca := C;
-      ca.I := I;
-      ca.T := NOEUD;
-      return ca;
+      NewC.c := ObtenirCoordonnee(C);
+      NewC.T := NOEUD;
+      NewC.I := I;
+      return NewC;
    end modifierIle;
 
    ------------------
    -- modifierPont --
    ------------------
+
 
    function modifierPont
      (C : in Type_CaseHashi; p : in Type_Pont) return Type_CaseHashi
@@ -93,6 +95,7 @@ package body CaseHashi is
       end if;
       return NewC;
    end modifierPont;
+
  
    ---------
    -- "=" --

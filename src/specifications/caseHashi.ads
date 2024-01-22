@@ -29,7 +29,7 @@ package CaseHashi is
    function ObtenirPont (C : in Type_CaseHashi) return Type_Pont;
 
    -- Modifie l'ile i de la case c
-   -- nécessite que le type de la case soit ILE
+   -- nécessite que le type de la case soit MER
    -- lève l'exception TYPE_INCOMPATIBLE si le type de la case n'est pas une
    -- ile
    function modifierIle
@@ -37,13 +37,15 @@ package CaseHashi is
 
    -- Modifie le pont p de la case
    -- Si le pont est dejà de valeur UN, alors il prend la valeur DEUX
-   -- c nécessite que le type de la case soit PONT
+   -- c nécessite que le type de la case soit MER ou PONT
    -- lève l'exception TYPE_INCOMPATIBLE si le type de la case n'est
    -- pas un pont
    function modifierPont
      (C : in Type_CaseHashi; p : in Type_Pont) return Type_CaseHashi;
 
-   -- retourne VRAI si les cases C1 et C2 sont égales et FAUX sinon
+   -- retourne VRAI si les cases C1 et C2 sont ont même coordonnées
+   -- même type et que leur contenu est égal
+   -- et FAUX sinon
    function "="
      (C1 : in Type_CaseHashi; C2 : in Type_CaseHashi) return Boolean;
 

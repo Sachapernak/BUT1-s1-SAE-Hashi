@@ -3,7 +3,7 @@ with Ada.Text_IO;         use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 --with Affichage;           use Affichage;
 -- TAD
-with ile;         use Ile;
+with Ile;         use Ile;
 with Pont;        use Pont;
 with Orientation; use Orientation;
 
@@ -50,7 +50,7 @@ package body a_tester_ile is
    function Test_ile_P4a return Boolean is
        I : Type_Ile;
    begin
-     I := ConstruireIle (3);
+      I := ConstruireIle (3);
       I := ModifierIle(I,2);
       return not EstIleComplete(I);
    end Test_ile_P4a;
@@ -62,7 +62,7 @@ package body a_tester_ile is
    function Test_ile_P4b return Boolean is
        I : Type_Ile;
    begin
-     I := ConstruireIle (2);
+      I := ConstruireIle (2);
       I := ModifierIle(I,2);
       return EstIleComplete(I);
    end Test_ile_P4b;
@@ -84,7 +84,7 @@ package body a_tester_ile is
    end Test_ile_Exception_1a;
 
    --------------------------
-   -- Test_ile_Exception_1a --
+   -- Test_ile_Exception_1b --
    --------------------------
 
    function Test_ile_Exception_1b return Boolean is
@@ -98,6 +98,22 @@ package body a_tester_ile is
       when others =>
          return False;
    end Test_ile_Exception_1b;
+
+      --------------------------
+   -- Test_ile_Exception_1c --
+   --------------------------
+
+   function Test_ile_Exception_1c return Boolean is
+      i : Type_Ile;
+   begin
+      i := ConstruireIle (0);
+      return False;
+   exception
+      when VALEUR_ILE_INVALIDE =>
+         return True;
+      when others =>
+         return False;
+   end Test_ile_Exception_1c;
 
    --------------------------
    -- Test_ile_Exception_2a --
@@ -117,7 +133,7 @@ package body a_tester_ile is
    end Test_ile_Exception_2a;
 
    --------------------------
-   -- Test_ile_Exception_2a --
+   -- Test_ile_Exception_2b --
    --------------------------
 
    function Test_ile_Exception_2b return Boolean is

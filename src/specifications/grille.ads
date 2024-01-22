@@ -15,8 +15,8 @@ package Grille is
    PAS_DE_SUIVANT : exception;
 
    -- cree une grille vide de nbl lignes et nbc colonne
-   -- necessite 1<= nbl <= TAILLEMAX 
-   -- necessite 1<= nbc <= TAILLEMAX 
+   -- necessite 1< nbl <= TAILLEMAX 
+   -- necessite 1< nbc <= TAILLEMAX 
    -- leve l'exception TAILLE_INVALIDE si nbl<1 ou nbl>TAILLE_MAX
    -- leve l'exception TAILLE_INVALIDE si nbc<1 ou nbl>TAILLE_MAX
    function ConstruireGrille (nbl : in integer ; nbc : in integer) return Type_Grille;
@@ -64,8 +64,8 @@ package Grille is
       return Type_CaseHashi;
 	  
    -- modifie la case c de la grille g 
-   procedure modifierCase
-      (G   : in out Type_Grille; c : in Type_CaseHashi);
+   function modifierCase
+      (G   : in Type_Grille; c : in Type_CaseHashi) return Type_Grille;
 
 private
 
