@@ -1,8 +1,7 @@
 pragma Ada_2012;
-with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Text_IO;         use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 package body Ile is
-
 
    -------------------
    -- ConstruireIle --
@@ -15,7 +14,7 @@ package body Ile is
       if V <= 0 or V > VALEUR_MAX then
          raise VALEUR_ILE_INVALIDE;
       end if;
-      Ile.V := V;
+      Ile.v := V;
       return Ile;
    end ConstruireIle;
 
@@ -25,7 +24,7 @@ package body Ile is
 
    function ObtenirValeur (I : in Type_Ile) return Integer is
    begin
-      return I.V;
+      return I.v;
    end ObtenirValeur;
 
    --------------------
@@ -35,7 +34,7 @@ package body Ile is
    function EstIleComplete (I : in Type_Ile) return Boolean is
    begin
 
-      return I.V = 0;
+      return I.v = 0;
    end EstIleComplete;
 
    -----------------
@@ -47,11 +46,11 @@ package body Ile is
    begin
       if P < 1 or P > 2 then
          raise VALEUR_PONT_INVALIDE;
-      elsif I.V - P < 0 then
+      elsif I.v - P < 0 then
 
          raise PONT_IMPOSSIBLE;
       end if;
-      Ile.V := I.V - P;
+      Ile.v := I.v - P;
       return Ile;
    end ModifierIle;
 

@@ -44,8 +44,8 @@ Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 W types_tests%s		types_tests.ads		types_tests.ali
 
-D a_tester_grille.ads	20240122073408 de21c14b a_tester_grille%s
-D a_tester_grille.adb	20240122075322 6cc2b025 a_tester_grille%b
+D a_tester_grille.ads	20240123193422 de21c14b a_tester_grille%s
+D a_tester_grille.adb	20240123193422 6cc2b025 a_tester_grille%b
 D ada.ads		20210520051132 76789da1 ada%s
 D a-charac.ads		20210520051128 2d3ec45b ada.characters%s
 D a-chlat1.ads		20210520051128 66457d31 ada.characters.latin_1%s
@@ -63,16 +63,16 @@ D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
 D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
 D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
-D affichage.ads		20240122073408 c07f7ff8 affichage%s
-D casehashi.ads		20240122073408 509b8585 casehashi%s
-D coordonnee.ads	20240122073408 b1b28967 coordonnee%s
-D grille.ads		20240122073408 3ada411a grille%s
-D ile.ads		20240122074308 e7306d41 ile%s
+D affichage.ads		20240123193422 c07f7ff8 affichage%s
+D casehashi.ads		20240123193420 509b8585 casehashi%s
+D coordonnee.ads	20240123193422 b1b28967 coordonnee%s
+D grille.ads		20240123193422 3ada411a grille%s
+D ile.ads		20240123193422 e7306d41 ile%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D orientation.ads	20240122073408 67230454 orientation%s
-D pont.ads		20240122073408 e5c3dea1 pont%s
-D resolution_hashi.ads	20240122073408 3dc217a0 resolution_hashi%s
+D orientation.ads	20240123193422 67230454 orientation%s
+D pont.ads		20240123193422 e5c3dea1 pont%s
+D resolution_hashi.ads	20240123193422 3dc217a0 resolution_hashi%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-atocou.ads		20210520051132 b45c2d8d system.atomic_counters%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
@@ -95,8 +95,8 @@ D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
 D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
 D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
-D typecase.ads		20240122073408 ea991bf5 typecase%s
-D types_tests.ads	20240122073408 b0a51c25 types_tests%s
+D typecase.ads		20240123193422 ea991bf5 typecase%s
+D types_tests.ads	20240123193424 b0a51c25 types_tests%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
 G c Z s b [test_grille_p01 a_tester_grille 10 13 none]

@@ -53,6 +53,7 @@ package Resolution_Hashi is
    -- trouver est à FAUX sinon
    procedure ResoudreHashi (G : in out Type_Grille; Trouve : out Boolean);
 
+
 --  private
 --     type Type_Tab_Successeurs is record
 --        NORD : Type_CaseHashi;

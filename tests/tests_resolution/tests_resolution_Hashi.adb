@@ -59,13 +59,13 @@ begin
    --------------------------------------
 
    -- On les teste une par une
-   test (V1, "***  Hashi très très facile - grille 1 ***");
-   test (V2, "***  Hashi très facile      - grille 2 ***");
-   test (V3, "***  Hashi facile           - grille 3 ***");
-   test (V4, "***  Hashi moins facile     - grille 4 ***");
-   test (V5, "***  Hashi moyen            - grille 5 ***");
-   test (V6, "***  Hashi dur              - grille 6 ***");
-   test (V7, "***  Hashi très dur         - grille 7 ***");
-   test (V8, "***  Hashi super dur        - grille 8 ***");
+   Test (V1, "***  Hashi très très facile - grille 1 ***");
+   Test (V2, "***  Hashi très facile      - grille 2 ***");
+   Test (V3, "***  Hashi facile           - grille 3 ***");
+   Test (V4, "***  Hashi moins facile     - grille 4 ***");
+   Test (V5, "***  Hashi moyen            - grille 5 ***");
+   Test (V6, "***  Hashi dur              - grille 6 ***");
+   Test (V7, "***  Hashi très dur         - grille 7 ***");
+   Test (V8, "***  Hashi super dur        - grille 8 ***");
 
 end tests_Resolution_Hashi;
