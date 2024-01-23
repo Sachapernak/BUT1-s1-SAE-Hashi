@@ -1,2 +1,4 @@
 .\obj
 obj
+obj/a_tester_grille.ali
+*.o
